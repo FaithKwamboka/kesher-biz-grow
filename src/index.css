@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -36,44 +38,43 @@ All colors MUST be HSL.
     --input: 214.3 31.8% 91.4%;
     --ring: 142 76% 36%;
 
-    /* Custom Kesher Design Tokens - Blue Focus */
+    /* Enhanced Kesher Design Tokens - Blue Focus */
     --kesher-navy: 215 30% 25%;
     --kesher-navy-light: 215 25% 35%;
     --kesher-sky: 206 100% 85%;
     --kesher-sky-dark: 206 80% 70%;
     --kesher-blue: 210 100% 65%;
     --kesher-blue-dark: 210 100% 45%;
-    --kesher-accent: 142 50% 70%;
+    --kesher-accent: 142 50% 50%;
     --kesher-grey: 220 15% 95%;
     
-    /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(var(--kesher-navy)) 0%, hsl(var(--kesher-blue)) 100%);
-    --gradient-light: linear-gradient(135deg, hsl(var(--kesher-sky)) 0%, hsl(220 40% 98%) 100%);
-    --gradient-card: linear-gradient(135deg, hsl(var(--kesher-blue)) 0%, hsl(var(--kesher-sky-dark)) 100%);
+    /* Enhanced Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--kesher-navy)), hsl(var(--kesher-blue)), hsl(var(--kesher-sky)));
+    --gradient-light: linear-gradient(135deg, hsl(var(--kesher-grey)), rgba(255, 255, 255, 0.8));
+    --gradient-card: linear-gradient(145deg, rgba(255, 255, 255, 0.9), rgba(248, 250, 252, 0.6));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--kesher-accent)), hsl(var(--kesher-blue)));
     
-    /* Shadows */
-    --shadow-kesher: 0 20px 40px -10px hsl(var(--kesher-navy) / 0.15);
+    /* Advanced Shadows */
+    --shadow-kesher: 0 20px 40px -12px rgba(59, 130, 246, 0.25);
+    --shadow-elegant: 0 10px 30px -10px rgba(30, 41, 59, 0.2);
+    --shadow-soft: 0 4px 20px -2px rgba(0, 0, 0, 0.08);
+    --shadow-glow: 0 0 40px rgba(59, 130, 246, 0.15);
     --shadow-card: 0 4px 20px -2px hsl(222.2 84% 4.9% / 0.08);
     
-    /* Animations */
+    /* Animation Variables */
     --transition-kesher: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
@@ -122,6 +123,61 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer components {
+  .bg-gradient-hero {
+    background: var(--gradient-hero);
+  }
+  
+  .bg-gradient-light {
+    background: var(--gradient-light);
+  }
+  
+  .bg-gradient-card {
+    background: var(--gradient-card);
+  }
+  
+  .bg-gradient-accent {
+    background: var(--gradient-accent);
+  }
+  
+  .shadow-kesher {
+    box-shadow: var(--shadow-kesher);
+  }
+  
+  .shadow-elegant {
+    box-shadow: var(--shadow-elegant);
+  }
+  
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+  
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+  
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+  
+  .transition-spring {
+    transition: var(--transition-spring);
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-kesher-blue to-kesher-accent bg-clip-text text-transparent;
+  }
+
+  .hover-lift {
+    @apply transition-all duration-300 hover:-translate-y-2 hover:shadow-kesher;
+  }
+
+  .glass-effect {
+    @apply backdrop-blur-sm bg-white/10 border border-white/20;
   }
 }
