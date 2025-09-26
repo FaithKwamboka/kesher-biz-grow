@@ -108,39 +108,33 @@ const Index = () => {
                 
                 {/* Chat Messages */}
                 <div className="p-4 space-y-4 h-96 overflow-y-auto bg-gray-50">
-                  <div className="flex justify-end">
-                    <div className="bg-kesher-blue text-white px-4 py-2 rounded-2xl rounded-br-md max-w-xs">
-                      Hi Kesher
+                  <div className="flex justify-start">
+                    <div className="bg-white border px-4 py-2 rounded-2xl rounded-bl-md max-w-xs shadow-sm">
+                      👋 Welcome to Kesher! Your financial assistant for your business.
                     </div>
                   </div>
                   
                   <div className="flex justify-start">
                     <div className="bg-white border px-4 py-2 rounded-2xl rounded-bl-md max-w-xs shadow-sm">
-                      Welcome! Upload receipts or statements to start.
-                    </div>
-                  </div>
-                  
-                  <div className="flex justify-end">
-                    <div className="bg-kesher-blue text-white px-4 py-2 rounded-2xl rounded-br-md max-w-xs">
-                      Today's sales: 5,000 KES
+                      I'll help you track sales, manage cashflow, and access affordable loans.
                     </div>
                   </div>
                   
                   <div className="flex justify-start">
                     <div className="bg-white border px-4 py-2 rounded-2xl rounded-bl-md max-w-xs shadow-sm">
-                      ✅ Logged. This week's total is 28,000 KES.
+                      To begin, what's your business name?
                     </div>
                   </div>
                   
                   <div className="flex justify-end">
                     <div className="bg-kesher-blue text-white px-4 py-2 rounded-2xl rounded-br-md max-w-xs">
-                      Who owes me money?
+                      Grace Beauty Salon
                     </div>
                   </div>
                   
                   <div className="flex justify-start">
                     <div className="bg-white border px-4 py-2 rounded-2xl rounded-bl-md max-w-xs shadow-sm">
-                      2 debtors: John 2,500 KES | Amina 1,200 KES.
+                      Great! Grace Beauty Salon is registered. Ready to track your daily sales?
                     </div>
                   </div>
                 </div>
