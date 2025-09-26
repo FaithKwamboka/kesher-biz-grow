@@ -20,7 +20,7 @@ const Index = () => {
               <MessageSquare className="mr-2 h-5 w-5" />
               Try Demo on WhatsApp
             </Button>
-            <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-kesher-navy">
+            <Button variant="secondary" size="lg" className="bg-white/20 text-white border-white/30 hover:bg-white hover:text-kesher-navy font-semibold">
               Join Kesher Today
             </Button>
           </div>
@@ -348,7 +348,7 @@ const Index = () => {
               <MessageSquare className="mr-2 h-5 w-5" />
               Try Demo on WhatsApp
             </Button>
-            <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-kesher-navy">
+            <Button variant="secondary" size="lg" className="bg-white/20 text-white border-white/30 hover:bg-white hover:text-kesher-navy font-semibold">
               Join Kesher Today
             </Button>
           </div>
