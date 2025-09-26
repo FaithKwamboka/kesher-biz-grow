@@ -94,8 +94,8 @@ const Index = () => {
                 <div className="w-12 h-12 rounded-full bg-kesher-blue text-white flex items-center justify-center shadow-card-soft">
                   <item.icon className="w-5 h-5" />
                 </div>
-                <p className="mt-4 font-semibold text-kesher-navy text-sm">{item.title}</p>
-                <p className="text-xs text-muted-foreground mt-1">{item.description}</p>
+                <p className="mt-4 font-semibold text-kesher-navy text-lg">{item.title}</p>
+                <p className="text-sm text-muted-foreground mt-1">{item.description}</p>
               </div>
             ))}
           </div>
@@ -136,8 +136,8 @@ const Index = () => {
                       <item.icon className="w-4 h-4" />
                     </div>
                     <div>
-                      <p className="font-semibold text-kesher-navy">{item.title}</p>
-                      <p className="text-sm text-muted-foreground">{item.description}</p>
+                      <p className="font-semibold text-kesher-navy text-lg">{item.title}</p>
+                      <p className="text-base text-muted-foreground">{item.description}</p>
                     </div>
                   </div>
                 </CardContent>

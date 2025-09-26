@@ -176,10 +176,10 @@ const About = () => {
                   <div className={`w-16 h-16 rounded-2xl bg-gradient-to-r ${feature.gradient} flex items-center justify-center mb-6 mx-auto group-hover:scale-110 transition-transform duration-300 shadow-elegant`}>
                     <feature.icon className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-2xl font-display font-semibold mb-4 text-kesher-navy group-hover:text-kesher-blue transition-colors">
+                  <h3 className="text-xl font-display font-semibold mb-4 text-kesher-navy group-hover:text-kesher-blue transition-colors">
                     {feature.title}
                   </h3>
-                  <p className="text-lg text-muted-foreground leading-relaxed">
+                  <p className="text-muted-foreground leading-relaxed">
                     {feature.description}
                   </p>
                 </CardContent>
