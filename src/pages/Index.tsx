@@ -2,10 +2,29 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { CheckCircle, MessageSquare, TrendingUp, Shield, Users, Building, Phone, Mail, ArrowRight, FileText, BarChart3, CreditCard } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
+      {/* Navigation */}
+      <nav className="bg-white/95 backdrop-blur-sm border-b border-kesher-blue/10 sticky top-0 z-50">
+        <div className="container max-w-6xl mx-auto px-4 py-4">
+          <div className="flex items-center justify-between">
+            <Link to="/" className="text-2xl font-display font-bold text-kesher-navy">
+              Kesher
+            </Link>
+            <div className="hidden md:flex items-center space-x-8">
+              <Link to="/" className="text-kesher-blue font-semibold">
+                Home
+              </Link>
+              <Link to="/about" className="text-kesher-navy hover:text-kesher-blue transition-colors">
+                About
+              </Link>
+            </div>
+          </div>
+        </div>
+      </nav>
       {/* Hero Section */}
       <section className="relative py-32 px-4 bg-gradient-hero overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-kesher-blue/10 to-transparent"></div>
@@ -440,7 +459,7 @@ const Index = () => {
           <div className="mt-12 pt-8 border-t text-center">
             <div className="flex flex-col sm:flex-row justify-center gap-6 text-sm text-muted-foreground">
               <a href="#" className="hover:text-kesher-blue transition-colors">How It Works</a>
-              <a href="#" className="hover:text-kesher-blue transition-colors">About Us</a>
+              <Link to="/about" className="hover:text-kesher-blue transition-colors">About Us</Link>
               <a href="#" className="hover:text-kesher-blue transition-colors">Privacy Policy</a>
             </div>
           </div>
