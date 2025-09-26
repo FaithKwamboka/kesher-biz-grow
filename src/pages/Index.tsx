@@ -107,7 +107,7 @@ const Index = () => {
                 </div>
                 
                 {/* Chat Messages */}
-                <div className="p-4 space-y-4 h-96 overflow-y-auto bg-gray-50">
+                <div className="p-4 space-y-4 h-96 overflow-y-auto bg-gray-50 scrollbar-thin scrollbar-thumb-gray-300">
                   <div className="flex justify-start">
                     <div className="bg-white border px-4 py-2 rounded-2xl rounded-bl-md max-w-xs shadow-sm">
                       👋 Welcome to Kesher! Your financial assistant for your business.
@@ -135,6 +135,66 @@ const Index = () => {
                   <div className="flex justify-start">
                     <div className="bg-white border px-4 py-2 rounded-2xl rounded-bl-md max-w-xs shadow-sm">
                       Great! Grace Beauty Salon is registered. Ready to track your daily sales?
+                    </div>
+                  </div>
+                  
+                  <div className="flex justify-end">
+                    <div className="bg-kesher-blue text-white px-4 py-2 rounded-2xl rounded-br-md max-w-xs">
+                      Yes! Today I got 3,500 KES from hair treatments
+                    </div>
+                  </div>
+                  
+                  <div className="flex justify-start">
+                    <div className="bg-white border px-4 py-2 rounded-2xl rounded-bl-md max-w-xs shadow-sm">
+                      ✅ Logged! 3,500 KES recorded for hair treatments today.
+                    </div>
+                  </div>
+                  
+                  <div className="flex justify-end">
+                    <div className="bg-kesher-blue text-white px-4 py-2 rounded-2xl rounded-br-md max-w-xs">
+                      Also spent 800 KES on hair products
+                    </div>
+                  </div>
+                  
+                  <div className="flex justify-start">
+                    <div className="bg-white border px-4 py-2 rounded-2xl rounded-bl-md max-w-xs shadow-sm">
+                      ✅ Expense recorded: 800 KES for hair products.
+                    </div>
+                  </div>
+                  
+                  <div className="flex justify-end">
+                    <div className="bg-kesher-blue text-white px-4 py-2 rounded-2xl rounded-br-md max-w-xs">
+                      What's my profit this week?
+                    </div>
+                  </div>
+                  
+                  <div className="flex justify-start">
+                    <div className="bg-white border px-4 py-2 rounded-2xl rounded-bl-md max-w-xs shadow-sm">
+                      This week: Sales 18,500 KES, Expenses 4,200 KES. Your profit is 14,300 KES! 📈
+                    </div>
+                  </div>
+                  
+                  <div className="flex justify-end">
+                    <div className="bg-kesher-blue text-white px-4 py-2 rounded-2xl rounded-br-md max-w-xs">
+                      Who are my regular customers?
+                    </div>
+                  </div>
+                  
+                  <div className="flex justify-start">
+                    <div className="bg-white border px-4 py-2 rounded-2xl rounded-bl-md max-w-xs shadow-sm">
+                      Top 3 customers: Mary (4 visits), Jane (3 visits), Susan (3 visits) this month.
+                    </div>
+                  </div>
+                  
+                  <div className="flex justify-end">
+                    <div className="bg-kesher-blue text-white px-4 py-2 rounded-2xl rounded-br-md max-w-xs">
+                      I need a loan for new equipment
+                    </div>
+                  </div>
+                  
+                  <div className="flex justify-start">
+                    <div className="bg-white border px-4 py-2 rounded-2xl rounded-bl-md max-w-xs shadow-sm">
+                      Your UFP shows steady monthly profit of 52,000 KES. I can connect you with partner lenders! 💰
                     </div>
                   </div>
                 </div>
