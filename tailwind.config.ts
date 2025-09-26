@@ -48,11 +48,14 @@ export default {
           foreground: "hsl(var(--card-foreground))",
         },
         kesher: {
-          green: "hsl(var(--kesher-green))",
-          "green-light": "hsl(var(--kesher-green-light))",
-          gold: "hsl(var(--kesher-gold))",
+          navy: "hsl(var(--kesher-navy))",
+          "navy-light": "hsl(var(--kesher-navy-light))",
+          sky: "hsl(var(--kesher-sky))",
+          "sky-dark": "hsl(var(--kesher-sky-dark))",
           blue: "hsl(var(--kesher-blue))",
           "blue-dark": "hsl(var(--kesher-blue-dark))",
+          accent: "hsl(var(--kesher-accent))",
+          grey: "hsl(var(--kesher-grey))",
         },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
@@ -72,8 +75,8 @@ export default {
       },
       backgroundImage: {
         "gradient-hero": "var(--gradient-hero)",
-        "gradient-success": "var(--gradient-success)",
-        "gradient-warm": "var(--gradient-warm)",
+        "gradient-light": "var(--gradient-light)",
+        "gradient-card": "var(--gradient-card)",
       },
       boxShadow: {
         "kesher": "var(--shadow-kesher)",
