@@ -37,76 +37,79 @@ const Index = () => {
 
 
       {/* How It Works Section */}
-      <section className="py-24 px-4 bg-kesher-grey">
-        <div className="container max-w-7xl mx-auto">
+      <section className="py-24 px-4 bg-white">
+        <div className="container max-w-6xl mx-auto">
           <div className="text-center mb-20 animate-slide-up">
             <h2 className="text-5xl font-display font-bold mb-6 text-kesher-navy">How It Works</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">Simple steps to transform your business finances</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
+          
+          <div className="space-y-16">
             {[
               {
-                step: "1",
+                step: "01",
                 title: "Say Hello on WhatsApp",
-                description: "Start your financial journey with a simple greeting.",
+                description: "Start your financial journey with a simple greeting. No downloads, no sign-ups - just open WhatsApp and say hi to Kesher.",
                 icon: MessageSquare,
-                color: "from-kesher-blue to-kesher-sky"
+                align: "left"
               },
               {
-                step: "2", 
-                title: "Upload Records",
-                description: "Send receipts, past records, or statements.",
+                step: "02", 
+                title: "Upload Your Records",
+                description: "Send photos of receipts, past ledgers, or M-Pesa statements. Kesher will organize everything automatically.",
                 icon: FileText,
-                color: "from-kesher-sky to-kesher-accent"
+                align: "right"
               },
               {
-                step: "3",
+                step: "03",
                 title: "Track Daily Sales", 
-                description: "Log sales manually or auto-sync via Kesher.",
+                description: "Log your daily sales with simple messages. Kesher learns your patterns and helps track inventory, customers, and cash flow.",
                 icon: BarChart3,
-                color: "from-kesher-accent to-kesher-blue"
+                align: "left"
               },
               {
-                step: "4",
-                title: "Ask Questions",
-                description: "Get insights like 'What were my sales last week?'",
+                step: "04",
+                title: "Get Instant Insights",
+                description: "Ask questions like 'What were my sales last week?' or 'Who are my best customers?' Get answers immediately.",
                 icon: TrendingUp,
-                color: "from-kesher-blue to-kesher-navy"
+                align: "right"
               },
               {
-                step: "5",
+                step: "05",
                 title: "Access Credit",
-                description: "Share your UFP with lenders for credit access.",
+                description: "Share your Unified Financial Profile with partner lenders to unlock affordable loans and grow your business.",
                 icon: CreditCard,
-                color: "from-kesher-navy to-kesher-blue"
+                align: "left"
               }
             ].map((item, index) => (
-              <Card key={index} className="relative overflow-hidden group hover-lift bg-gradient-card border-0 shadow-soft hover:shadow-kesher transition-all duration-500" style={{animationDelay: `${index * 0.1}s`}}>
-                <CardHeader className="text-center relative z-10">
-                  <div className="flex justify-center mb-6">
-                    <div className={`w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold bg-gradient-to-r ${item.color} text-white shadow-elegant animate-pulse-glow`}>
+              <div key={index} className={`flex items-center gap-12 ${item.align === 'right' ? 'flex-row-reverse' : ''} animate-fade-in`} style={{animationDelay: `${index * 0.2}s`}}>
+                
+                {/* Content Side */}
+                <div className="flex-1">
+                  <div className="flex items-center gap-6 mb-6">
+                    <div className="text-6xl font-display font-bold text-kesher-blue/20">
                       {item.step}
                     </div>
-                  </div>
-                  <div className="mb-6 p-4 rounded-full bg-gradient-to-r from-kesher-blue/10 to-kesher-sky/10 w-fit mx-auto">
-                    <item.icon className="w-10 h-10 text-kesher-blue group-hover:scale-110 transition-transform duration-300" />
-                  </div>
-                  <CardTitle className="text-xl font-semibold text-kesher-navy group-hover:text-kesher-blue transition-colors">{item.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription className="text-center text-base leading-relaxed">{item.description}</CardDescription>
-                </CardContent>
-                {index < 4 && (
-                  <div className="hidden md:block absolute -right-4 top-1/2 transform -translate-y-1/2 text-kesher-blue z-20">
-                    <div className="bg-white rounded-full p-2 shadow-soft">
-                      <ArrowRight className="w-5 h-5" />
+                    <div className="flex-1">
+                      <h3 className="text-3xl font-display font-semibold text-kesher-navy mb-3">{item.title}</h3>
+                      <p className="text-lg text-muted-foreground leading-relaxed">{item.description}</p>
                     </div>
                   </div>
-                )}
-                <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-kesher-blue/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              </Card>
+                </div>
+                
+                {/* Icon Side */}
+                <div className="flex-shrink-0">
+                  <div className="w-32 h-32 rounded-3xl bg-gradient-to-br from-kesher-blue to-kesher-sky flex items-center justify-center shadow-kesher hover:shadow-glow transition-all duration-300 hover:scale-105">
+                    <item.icon className="w-16 h-16 text-white" />
+                  </div>
+                </div>
+                
+              </div>
             ))}
           </div>
+          
+          {/* Connection Lines */}
+          <div className="absolute left-1/2 transform -translate-x-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-kesher-blue/30 to-transparent hidden lg:block"></div>
         </div>
       </section>
 
