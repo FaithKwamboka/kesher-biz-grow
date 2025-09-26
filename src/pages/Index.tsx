@@ -11,8 +11,8 @@ const Index = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-kesher-blue/10 to-transparent"></div>
         <div className="container max-w-6xl mx-auto text-center relative z-10">
           <div className="animate-fade-in">
-            <h1 className="text-5xl md:text-7xl font-display font-bold mb-8 text-white leading-tight">
-              Turn Everyday Sales Into <span className="text-gradient">Bankable Records</span>
+            <h1 className="text-5xl md:text-7xl font-display font-bold mb-8 text-white leading-tight tracking-tight drop-shadow">
+              Turn Everyday Sales Into <span className="text-white">Bankable Records</span>
             </h1>
             <p className="text-xl md:text-2xl mb-12 text-white/90 max-w-4xl mx-auto leading-relaxed font-light">
               Kesher transforms your daily transactions into a Unified Financial Profile lenders can trust, all through WhatsApp.
@@ -37,79 +37,94 @@ const Index = () => {
 
 
       {/* How It Works Section */}
-      <section className="py-24 px-4 bg-white">
-        <div className="container max-w-6xl mx-auto">
-          <div className="text-center mb-20 animate-slide-up">
-            <h2 className="text-5xl font-display font-bold mb-6 text-kesher-navy">How It Works</h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">Simple steps to transform your business finances</p>
-          </div>
-          
-          <div className="space-y-16">
+      <section className="py-20 px-4 bg-white">
+        <div className="container max-w-7xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-display font-bold text-center text-kesher-navy mb-12">How It Works</h2>
+
+          {/* Desktop: compact horizontal stepper */}
+          <div className="hidden md:flex items-stretch justify-between gap-6 relative">
+            <div className="absolute left-0 right-0 top-10 h-px bg-kesher-blue/20"></div>
             {[
               {
-                step: "01",
                 title: "Say Hello on WhatsApp",
-                description: "Start your financial journey with a simple greeting. No downloads, no sign-ups - just open WhatsApp and say hi to Kesher.",
-                icon: MessageSquare,
-                align: "left"
+                description: "Start with a simple greeting.",
+                icon: MessageSquare
               },
               {
-                step: "02", 
-                title: "Upload Your Records",
-                description: "Send photos of receipts, past ledgers, or M-Pesa statements. Kesher will organize everything automatically.",
-                icon: FileText,
-                align: "right"
+                title: "Upload Records",
+                description: "Receipts, ledgers, or statements.",
+                icon: FileText
               },
               {
-                step: "03",
-                title: "Track Daily Sales", 
-                description: "Log your daily sales with simple messages. Kesher learns your patterns and helps track inventory, customers, and cash flow.",
-                icon: BarChart3,
-                align: "left"
+                title: "Track Daily Sales",
+                description: "Manual or auto-log via Kesher.",
+                icon: BarChart3
               },
               {
-                step: "04",
-                title: "Get Instant Insights",
-                description: "Ask questions like 'What were my sales last week?' or 'Who are my best customers?' Get answers immediately.",
-                icon: TrendingUp,
-                align: "right"
+                title: "Ask Questions",
+                description: "Instant insights anytime.",
+                icon: TrendingUp
               },
               {
-                step: "05",
                 title: "Access Credit",
-                description: "Share your Unified Financial Profile with partner lenders to unlock affordable loans and grow your business.",
-                icon: CreditCard,
-                align: "left"
+                description: "Share your UFP with lenders.",
+                icon: CreditCard
               }
-            ].map((item, index) => (
-              <div key={index} className={`flex items-center gap-12 ${item.align === 'right' ? 'flex-row-reverse' : ''} animate-fade-in`} style={{animationDelay: `${index * 0.2}s`}}>
-                
-                {/* Content Side */}
-                <div className="flex-1">
-                  <div className="flex items-center gap-6 mb-6">
-                    <div className="text-6xl font-display font-bold text-kesher-blue/20">
-                      {item.step}
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="text-3xl font-display font-semibold text-kesher-navy mb-3">{item.title}</h3>
-                      <p className="text-lg text-muted-foreground leading-relaxed">{item.description}</p>
-                    </div>
-                  </div>
+            ].map((item, i) => (
+              <div key={i} className="flex-1 flex flex-col items-center text-center">
+                <div className="w-12 h-12 rounded-full bg-kesher-blue text-white flex items-center justify-center shadow-card-soft">
+                  <item.icon className="w-5 h-5" />
                 </div>
-                
-                {/* Icon Side */}
-                <div className="flex-shrink-0">
-                  <div className="w-32 h-32 rounded-3xl bg-gradient-to-br from-kesher-blue to-kesher-sky flex items-center justify-center shadow-kesher hover:shadow-glow transition-all duration-300 hover:scale-105">
-                    <item.icon className="w-16 h-16 text-white" />
-                  </div>
-                </div>
-                
+                <p className="mt-4 font-semibold text-kesher-navy text-sm">{item.title}</p>
+                <p className="text-xs text-muted-foreground mt-1">{item.description}</p>
               </div>
             ))}
           </div>
-          
-          {/* Connection Lines */}
-          <div className="absolute left-1/2 transform -translate-x-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-kesher-blue/30 to-transparent hidden lg:block"></div>
+
+          {/* Mobile: simple stacked list */}
+          <div className="md:hidden grid grid-cols-1 gap-4">
+            {[
+              {
+                title: "Say Hello on WhatsApp",
+                description: "Start with a simple greeting.",
+                icon: MessageSquare
+              },
+              {
+                title: "Upload Records",
+                description: "Receipts, ledgers, or statements.",
+                icon: FileText
+              },
+              {
+                title: "Track Daily Sales",
+                description: "Manual or auto-log via Kesher.",
+                icon: BarChart3
+              },
+              {
+                title: "Ask Questions",
+                description: "Instant insights anytime.",
+                icon: TrendingUp
+              },
+              {
+                title: "Access Credit",
+                description: "Share your UFP with lenders.",
+                icon: CreditCard
+              }
+            ].map((item, i) => (
+              <Card key={i} className="p-4 bg-white border shadow-card-soft">
+                <CardContent className="p-0">
+                  <div className="flex items-start gap-3">
+                    <div className="w-10 h-10 rounded-full bg-kesher-blue text-white flex items-center justify-center flex-shrink-0">
+                      <item.icon className="w-4 h-4" />
+                    </div>
+                    <div>
+                      <p className="font-semibold text-kesher-navy">{item.title}</p>
+                      <p className="text-sm text-muted-foreground">{item.description}</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
         </div>
       </section>
 
