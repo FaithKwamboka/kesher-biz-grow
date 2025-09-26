@@ -47,6 +47,13 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        kesher: {
+          green: "hsl(var(--kesher-green))",
+          "green-light": "hsl(var(--kesher-green-light))",
+          gold: "hsl(var(--kesher-gold))",
+          blue: "hsl(var(--kesher-blue))",
+          "blue-dark": "hsl(var(--kesher-blue-dark))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -62,6 +69,18 @@ export default {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      backgroundImage: {
+        "gradient-hero": "var(--gradient-hero)",
+        "gradient-success": "var(--gradient-success)",
+        "gradient-warm": "var(--gradient-warm)",
+      },
+      boxShadow: {
+        "kesher": "var(--shadow-kesher)",
+        "card-soft": "var(--shadow-card)",
+      },
+      transitionTimingFunction: {
+        "kesher": "var(--transition-kesher)",
       },
       keyframes: {
         "accordion-down": {
