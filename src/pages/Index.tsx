@@ -27,29 +27,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Problem & Solution Section */}
-      <section className="py-20 px-4 bg-white">
-        <div className="container max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-kesher-navy leading-tight">
-                Most micro and small businesses run on receipts, notebooks, and M-Pesa. Without structured records, they are invisible to banks.
-              </h2>
-            </div>
-            <Card className="bg-gradient-light border-0 shadow-kesher p-8">
-              <CardContent className="pt-6">
-                <h3 className="text-2xl font-bold mb-4 text-kesher-navy">
-                  Kesher builds a clean financial profile from your sales, expenses, and receipts, helping you access affordable credit.
-                </h3>
-                <Button className="mt-6 bg-kesher-blue hover:bg-kesher-blue-dark">
-                  See How Kesher Works
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
 
       {/* How It Works Section */}
       <section className="py-20 px-4 bg-kesher-grey">
