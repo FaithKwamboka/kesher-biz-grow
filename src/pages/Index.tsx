@@ -110,31 +110,7 @@ const Index = () => {
                 <div className="p-4 space-y-4 h-96 overflow-y-auto bg-gray-50 scrollbar-thin scrollbar-thumb-gray-300">
                   <div className="flex justify-start">
                     <div className="bg-white border px-4 py-2 rounded-2xl rounded-bl-md max-w-xs shadow-sm">
-                      👋 Welcome to Kesher! Your financial assistant for your business.
-                    </div>
-                  </div>
-                  
-                  <div className="flex justify-start">
-                    <div className="bg-white border px-4 py-2 rounded-2xl rounded-bl-md max-w-xs shadow-sm">
-                      I'll help you track sales, manage cashflow, and access affordable loans.
-                    </div>
-                  </div>
-                  
-                  <div className="flex justify-start">
-                    <div className="bg-white border px-4 py-2 rounded-2xl rounded-bl-md max-w-xs shadow-sm">
-                      To begin, what's your business name?
-                    </div>
-                  </div>
-                  
-                  <div className="flex justify-end">
-                    <div className="bg-kesher-blue text-white px-4 py-2 rounded-2xl rounded-br-md max-w-xs">
-                      Grace Beauty Salon
-                    </div>
-                  </div>
-                  
-                  <div className="flex justify-start">
-                    <div className="bg-white border px-4 py-2 rounded-2xl rounded-bl-md max-w-xs shadow-sm">
-                      Great! Grace Beauty Salon is registered. Ready to track your daily sales?
+                      👋 Welcome back, Grace! Ready to track today's sales?
                     </div>
                   </div>
                   
@@ -176,18 +152,6 @@ const Index = () => {
                   
                   <div className="flex justify-end">
                     <div className="bg-kesher-blue text-white px-4 py-2 rounded-2xl rounded-br-md max-w-xs">
-                      Who are my regular customers?
-                    </div>
-                  </div>
-                  
-                  <div className="flex justify-start">
-                    <div className="bg-white border px-4 py-2 rounded-2xl rounded-bl-md max-w-xs shadow-sm">
-                      Top 3 customers: Mary (4 visits), Jane (3 visits), Susan (3 visits) this month.
-                    </div>
-                  </div>
-                  
-                  <div className="flex justify-end">
-                    <div className="bg-kesher-blue text-white px-4 py-2 rounded-2xl rounded-br-md max-w-xs">
                       I need a loan for new equipment
                     </div>
                   </div>
@@ -195,6 +159,42 @@ const Index = () => {
                   <div className="flex justify-start">
                     <div className="bg-white border px-4 py-2 rounded-2xl rounded-bl-md max-w-xs shadow-sm">
                       Your UFP shows steady monthly profit of 52,000 KES. I can connect you with partner lenders! 💰
+                    </div>
+                  </div>
+                  
+                  <div className="flex justify-start">
+                    <div className="bg-white border px-4 py-2 rounded-2xl rounded-bl-md max-w-xs shadow-sm">
+                      📋 Based on your profile, you qualify for:
+                    </div>
+                  </div>
+                  
+                  <div className="flex justify-start">
+                    <div className="bg-white border px-4 py-2 rounded-2xl rounded-bl-md max-w-xs shadow-sm">
+                      🏦 KWFT: Up to 100,000 KES at 15% interest
+                    </div>
+                  </div>
+                  
+                  <div className="flex justify-start">
+                    <div className="bg-white border px-4 py-2 rounded-2xl rounded-bl-md max-w-xs shadow-sm">
+                      🏦 Faulu Bank: Up to 150,000 KES at 18% interest
+                    </div>
+                  </div>
+                  
+                  <div className="flex justify-start">
+                    <div className="bg-white border px-4 py-2 rounded-2xl rounded-bl-md max-w-xs shadow-sm">
+                      🏦 SMEP: Up to 80,000 KES at 14% interest
+                    </div>
+                  </div>
+                  
+                  <div className="flex justify-end">
+                    <div className="bg-kesher-blue text-white px-4 py-2 rounded-2xl rounded-br-md max-w-xs">
+                      Tell me more about SMEP
+                    </div>
+                  </div>
+                  
+                  <div className="flex justify-start">
+                    <div className="bg-white border px-4 py-2 rounded-2xl rounded-bl-md max-w-xs shadow-sm">
+                      SMEP offers the best rate at 14%. Fast approval in 3 days. Shall I share your UFP with them?
                     </div>
                   </div>
                 </div>
