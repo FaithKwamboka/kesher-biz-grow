@@ -173,7 +173,7 @@ const Index = () => {
                 <div className="bg-gradient-to-r from-qenty-blue to-qenty-accent px-6 py-4 text-white text-center">
                   <div className="flex items-center justify-center space-x-3">
                     <div className="w-3 h-3 bg-white/80 rounded-full animate-pulse"></div>
-                    <span className="font-semibold text-lg">Qenty Assistant</span>
+                    <span className="font-semibold text-lg">Qenty</span>
                     <div className="text-xs bg-white/20 px-2 py-1 rounded-full">Online</div>
                   </div>
                 </div>
