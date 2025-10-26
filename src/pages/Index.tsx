@@ -366,10 +366,10 @@ const Index = () => {
           </div>
           
           <div className="mt-16 animate-fade-in" style={{animationDelay: '1s'}}>
-            <Button size="lg" className="bg-gradient-to-r from-qenty-blue to-qenty-blue-dark hover:from-qenty-blue-dark hover:to-qenty-navy shadow-qenty hover-lift font-semibold px-8 py-4" asChild>
+            <Button size="lg" variant="hero" className="shadow-qenty hover-lift font-semibold px-10 py-4" asChild>
               <a href="https://wa.me/254794760625" target="_blank" rel="noopener noreferrer">
                 <MessageSquare className="mr-3 h-5 w-5" />
-                Try Qenty on WhatsApp
+                Try the Demo Now
               </a>
             </Button>
           </div>
