@@ -35,7 +35,7 @@ const About = () => {
               <span className="text-sm font-medium">Our Story</span>
             </div>
             <h1 className="text-6xl md:text-7xl font-display font-bold mb-8 text-white leading-tight tracking-tight drop-shadow-lg">
-              About <span className="text-gradient bg-gradient-to-r from-white to-qenty-sky bg-clip-text text-transparent">Qenty</span>
+              About <span className="text-white">Qenty</span>
             </h1>
             <p className="text-xl md:text-2xl text-white/90 max-w-4xl mx-auto leading-relaxed font-light">
               Empowering Africa's invisible businesses with financial transparency and unlimited opportunity.
