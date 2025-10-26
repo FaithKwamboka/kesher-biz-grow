@@ -1,7 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { CheckCircle, MessageSquare, TrendingUp, Shield, Users, Building, Phone, Mail, ArrowRight, FileText, BarChart3, CreditCard, Globe } from "lucide-react";
+import { CheckCircle, MessageSquare, TrendingUp, Shield, Users, Building, Phone, Mail, ArrowRight, FileText, Package, CreditCard, Globe } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Index = () => {
@@ -79,9 +79,9 @@ const Index = () => {
                 icon: FileText
               },
               {
-                title: "Track Daily Sales",
-                description: "Manual or auto-log via Qenty.",
-                icon: BarChart3
+                title: "Manage Daily Operations",
+                description: "Track sales, update catalogue, manage inventory.",
+                icon: Package
               },
               {
                 title: "Ask Questions",
@@ -118,9 +118,9 @@ const Index = () => {
                 icon: FileText
               },
               {
-                title: "Track Daily Sales",
-                description: "Manual or auto-log via Qenty.",
-                icon: BarChart3
+                title: "Manage Daily Operations",
+                description: "Track sales, update catalogue, manage inventory.",
+                icon: Package
               },
               {
                 title: "Ask Questions",
