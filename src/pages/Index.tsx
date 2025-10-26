@@ -458,6 +458,7 @@ const Index = () => {
               <Phone className="w-8 h-8 text-qenty-blue mb-4" />
               <h3 className="text-lg font-semibold mb-2 text-qenty-navy">Phone</h3>
               <p className="text-muted-foreground">+254727705173</p>
+              <p className="text-muted-foreground">+254702735380</p>
             </div>
             <div className="flex flex-col items-center">
               <MessageSquare className="w-8 h-8 text-qenty-blue mb-4" />
