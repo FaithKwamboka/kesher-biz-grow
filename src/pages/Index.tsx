@@ -162,120 +162,203 @@ const Index = () => {
             </p>
           </div>
           
-          {/* Phone Mockup */}
+          {/* Phone Mockup - WhatsApp Style */}
           <div className="relative mx-auto max-w-sm animate-scale-in">
-            <div className="bg-gradient-to-br from-qenty-navy to-qenty-blue-dark rounded-3xl p-3 shadow-qenty relative">
+            <div className="bg-gray-900 rounded-3xl p-3 shadow-2xl relative">
               {/* Phone Glow Effect */}
-              <div className="absolute inset-0 bg-gradient-to-br from-qenty-sky/20 to-transparent rounded-3xl animate-pulse-glow"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-gray-700/20 to-transparent rounded-3xl"></div>
               
-              <div className="bg-white rounded-2xl overflow-hidden relative z-10 shadow-elegant">
-                {/* Phone Header */}
-                <div className="bg-gradient-to-r from-qenty-blue to-qenty-accent px-6 py-4 text-white text-center">
-                  <div className="flex items-center justify-center space-x-3">
-                    <div className="w-3 h-3 bg-white/80 rounded-full animate-pulse"></div>
-                    <span className="font-semibold text-lg">Qenty</span>
-                    <div className="text-xs bg-white/20 px-2 py-1 rounded-full">Online</div>
+              <div className="bg-[#E5DDD5] rounded-2xl overflow-hidden relative z-10 shadow-elegant">
+                {/* WhatsApp Header */}
+                <div className="bg-[#075E54] px-4 py-3 text-white">
+                  <div className="flex items-center space-x-3">
+                    <div className="w-10 h-10 bg-gray-300 rounded-full flex items-center justify-center text-2xl">
+                      🏪
+                    </div>
+                    <div className="flex-1">
+                      <div className="font-semibold text-base">Qenty</div>
+                      <div className="text-xs text-gray-200 flex items-center gap-1">
+                        <span className="w-2 h-2 bg-green-400 rounded-full"></span>
+                        online
+                      </div>
+                    </div>
                   </div>
                 </div>
                 
-                {/* Chat Messages */}
-                <div className="p-4 space-y-4 h-96 overflow-y-auto bg-gradient-to-b from-gray-50 to-white scrollbar-thin scrollbar-thumb-gray-300">
+                {/* Chat Messages - WhatsApp Background Pattern */}
+                <div className="p-3 space-y-2 h-96 overflow-y-auto bg-[#E5DDD5] relative" style={{backgroundImage: "url(\"data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d1c9bf' fill-opacity='0.15'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E\")"}}>
+                  
+                  {/* Incoming message */}
                   <div className="flex justify-start animate-slide-up" style={{animationDelay: '0.5s'}}>
-                    <div className="bg-gradient-card border px-4 py-3 rounded-2xl rounded-bl-md max-w-xs shadow-soft">
-                      👋 Welcome back, Grace! Ready to track today's sales?
+                    <div className="bg-white px-3 py-2 rounded-lg rounded-tl-none max-w-[75%] shadow-sm">
+                      <div className="text-sm text-gray-900">
+                        👋 Welcome back, Grace! Ready to track today's sales?
+                      </div>
+                      <div className="text-xs text-gray-500 text-right mt-1">10:32 AM</div>
                     </div>
                   </div>
                   
+                  {/* Outgoing message */}
                   <div className="flex justify-end animate-slide-up" style={{animationDelay: '0.7s'}}>
-                    <div className="bg-gradient-to-r from-qenty-blue to-qenty-blue-dark text-white px-4 py-3 rounded-2xl rounded-br-md max-w-xs shadow-soft">
-                      Yes! Today I got 3,500 KES from hair treatments
+                    <div className="bg-[#DCF8C6] px-3 py-2 rounded-lg rounded-tr-none max-w-[75%] shadow-sm">
+                      <div className="text-sm text-gray-900">
+                        Yes! Today I got 3,500 KES from hair treatments
+                      </div>
+                      <div className="text-xs text-gray-600 text-right mt-1 flex items-center justify-end gap-1">
+                        10:33 AM
+                        <span className="text-blue-500">✓✓</span>
+                      </div>
                     </div>
                   </div>
                   
+                  {/* Incoming message */}
                   <div className="flex justify-start animate-slide-up" style={{animationDelay: '0.9s'}}>
-                    <div className="bg-gradient-card border px-4 py-3 rounded-2xl rounded-bl-md max-w-xs shadow-soft">
-                      ✅ Logged! 3,500 KES recorded for hair treatments today.
+                    <div className="bg-white px-3 py-2 rounded-lg rounded-tl-none max-w-[75%] shadow-sm">
+                      <div className="text-sm text-gray-900">
+                        ✅ Logged! 3,500 KES recorded for hair treatments today.
+                      </div>
+                      <div className="text-xs text-gray-500 text-right mt-1">10:33 AM</div>
                     </div>
                   </div>
                   
+                  {/* Outgoing message */}
                   <div className="flex justify-end animate-slide-up" style={{animationDelay: '1.1s'}}>
-                    <div className="bg-gradient-to-r from-qenty-blue to-qenty-blue-dark text-white px-4 py-3 rounded-2xl rounded-br-md max-w-xs shadow-soft">
-                      Also spent 800 KES on hair products
+                    <div className="bg-[#DCF8C6] px-3 py-2 rounded-lg rounded-tr-none max-w-[75%] shadow-sm">
+                      <div className="text-sm text-gray-900">
+                        Also spent 800 KES on hair products
+                      </div>
+                      <div className="text-xs text-gray-600 text-right mt-1 flex items-center justify-end gap-1">
+                        10:34 AM
+                        <span className="text-blue-500">✓✓</span>
+                      </div>
                     </div>
                   </div>
                   
+                  {/* Incoming message */}
                   <div className="flex justify-start animate-slide-up" style={{animationDelay: '1.3s'}}>
-                    <div className="bg-gradient-card border px-4 py-3 rounded-2xl rounded-bl-md max-w-xs shadow-soft">
-                      ✅ Expense recorded: 800 KES for hair products.
+                    <div className="bg-white px-3 py-2 rounded-lg rounded-tl-none max-w-[75%] shadow-sm">
+                      <div className="text-sm text-gray-900">
+                        ✅ Expense recorded: 800 KES for hair products.
+                      </div>
+                      <div className="text-xs text-gray-500 text-right mt-1">10:34 AM</div>
                     </div>
                   </div>
                   
+                  {/* Outgoing message */}
                   <div className="flex justify-end animate-slide-up" style={{animationDelay: '1.5s'}}>
-                    <div className="bg-gradient-to-r from-qenty-blue to-qenty-blue-dark text-white px-4 py-3 rounded-2xl rounded-br-md max-w-xs shadow-soft">
-                      What's my profit this week?
+                    <div className="bg-[#DCF8C6] px-3 py-2 rounded-lg rounded-tr-none max-w-[75%] shadow-sm">
+                      <div className="text-sm text-gray-900">
+                        What's my profit this week?
+                      </div>
+                      <div className="text-xs text-gray-600 text-right mt-1 flex items-center justify-end gap-1">
+                        10:35 AM
+                        <span className="text-blue-500">✓✓</span>
+                      </div>
                     </div>
                   </div>
                   
+                  {/* Incoming message */}
                   <div className="flex justify-start animate-slide-up" style={{animationDelay: '1.7s'}}>
-                    <div className="bg-gradient-accent text-white px-4 py-3 rounded-2xl rounded-bl-md max-w-xs shadow-soft">
-                      This week: Sales 18,500 KES, Expenses 4,200 KES. Your profit is 14,300 KES! 📈
+                    <div className="bg-white px-3 py-2 rounded-lg rounded-tl-none max-w-[75%] shadow-sm">
+                      <div className="text-sm text-gray-900">
+                        This week: Sales 18,500 KES, Expenses 4,200 KES. Your profit is 14,300 KES! 📈
+                      </div>
+                      <div className="text-xs text-gray-500 text-right mt-1">10:35 AM</div>
                     </div>
                   </div>
                   
+                  {/* Outgoing message */}
                   <div className="flex justify-end animate-slide-up" style={{animationDelay: '1.9s'}}>
-                    <div className="bg-gradient-to-r from-qenty-blue to-qenty-blue-dark text-white px-4 py-3 rounded-2xl rounded-br-md max-w-xs shadow-soft">
-                      I need a loan for new equipment
+                    <div className="bg-[#DCF8C6] px-3 py-2 rounded-lg rounded-tr-none max-w-[75%] shadow-sm">
+                      <div className="text-sm text-gray-900">
+                        I need a loan for new equipment
+                      </div>
+                      <div className="text-xs text-gray-600 text-right mt-1 flex items-center justify-end gap-1">
+                        10:36 AM
+                        <span className="text-blue-500">✓✓</span>
+                      </div>
                     </div>
                   </div>
                   
+                  {/* Incoming message */}
                   <div className="flex justify-start animate-slide-up" style={{animationDelay: '2.1s'}}>
-                    <div className="bg-gradient-card border px-4 py-3 rounded-2xl rounded-bl-md max-w-xs shadow-soft">
-                      Your UFP shows steady monthly profit of 52,000 KES. I can connect you with partner lenders! 💰
+                    <div className="bg-white px-3 py-2 rounded-lg rounded-tl-none max-w-[75%] shadow-sm">
+                      <div className="text-sm text-gray-900">
+                        Your UFP shows steady monthly profit of 52,000 KES. I can connect you with partner lenders! 💰
+                      </div>
+                      <div className="text-xs text-gray-500 text-right mt-1">10:36 AM</div>
                     </div>
                   </div>
                   
+                  {/* Incoming message */}
                   <div className="flex justify-start animate-slide-up" style={{animationDelay: '2.3s'}}>
-                    <div className="bg-gradient-accent text-white px-4 py-3 rounded-2xl rounded-bl-md max-w-xs shadow-soft">
-                      📋 Based on your profile, you qualify for:
+                    <div className="bg-white px-3 py-2 rounded-lg rounded-tl-none max-w-[75%] shadow-sm">
+                      <div className="text-sm text-gray-900">
+                        📋 Based on your profile, you qualify for:
+                      </div>
+                      <div className="text-xs text-gray-500 text-right mt-1">10:37 AM</div>
                     </div>
                   </div>
                   
+                  {/* Incoming message */}
                   <div className="flex justify-start animate-slide-up" style={{animationDelay: '2.5s'}}>
-                    <div className="bg-gradient-card border px-4 py-3 rounded-2xl rounded-bl-md max-w-xs shadow-soft">
-                      🏦 KWFT: Up to 100,000 KES at 15% interest
+                    <div className="bg-white px-3 py-2 rounded-lg rounded-tl-none max-w-[75%] shadow-sm">
+                      <div className="text-sm text-gray-900">
+                        🏦 KWFT: Up to 100,000 KES at 15% interest
+                      </div>
+                      <div className="text-xs text-gray-500 text-right mt-1">10:37 AM</div>
                     </div>
                   </div>
                   
+                  {/* Incoming message */}
                   <div className="flex justify-start animate-slide-up" style={{animationDelay: '2.7s'}}>
-                    <div className="bg-gradient-card border px-4 py-3 rounded-2xl rounded-bl-md max-w-xs shadow-soft">
-                      🏦 Faulu Bank: Up to 150,000 KES at 18% interest
+                    <div className="bg-white px-3 py-2 rounded-lg rounded-tl-none max-w-[75%] shadow-sm">
+                      <div className="text-sm text-gray-900">
+                        🏦 Faulu Bank: Up to 150,000 KES at 18% interest
+                      </div>
+                      <div className="text-xs text-gray-500 text-right mt-1">10:37 AM</div>
                     </div>
                   </div>
                   
+                  {/* Incoming message */}
                   <div className="flex justify-start animate-slide-up" style={{animationDelay: '2.9s'}}>
-                    <div className="bg-gradient-card border px-4 py-3 rounded-2xl rounded-bl-md max-w-xs shadow-soft">
-                      🏦 SMEP: Up to 80,000 KES at 14% interest
+                    <div className="bg-white px-3 py-2 rounded-lg rounded-tl-none max-w-[75%] shadow-sm">
+                      <div className="text-sm text-gray-900">
+                        🏦 SMEP: Up to 80,000 KES at 14% interest
+                      </div>
+                      <div className="text-xs text-gray-500 text-right mt-1">10:38 AM</div>
                     </div>
                   </div>
                   
+                  {/* Outgoing message */}
                   <div className="flex justify-end animate-slide-up" style={{animationDelay: '3.1s'}}>
-                    <div className="bg-gradient-to-r from-qenty-blue to-qenty-blue-dark text-white px-4 py-3 rounded-2xl rounded-br-md max-w-xs shadow-soft">
-                      Tell me more about SMEP
+                    <div className="bg-[#DCF8C6] px-3 py-2 rounded-lg rounded-tr-none max-w-[75%] shadow-sm">
+                      <div className="text-sm text-gray-900">
+                        Tell me more about SMEP
+                      </div>
+                      <div className="text-xs text-gray-600 text-right mt-1 flex items-center justify-end gap-1">
+                        10:38 AM
+                        <span className="text-blue-500">✓✓</span>
+                      </div>
                     </div>
                   </div>
                   
+                  {/* Incoming message */}
                   <div className="flex justify-start animate-slide-up" style={{animationDelay: '3.3s'}}>
-                    <div className="bg-gradient-accent text-white px-4 py-3 rounded-2xl rounded-bl-md max-w-xs shadow-soft">
-                      SMEP offers the best rate at 14%. Fast approval in 3 days. Shall I share your UFP with them?
+                    <div className="bg-white px-3 py-2 rounded-lg rounded-tl-none max-w-[75%] shadow-sm">
+                      <div className="text-sm text-gray-900">
+                        SMEP offers the best rate at 14%. Fast approval in 3 days. Shall I share your UFP with them?
+                      </div>
+                      <div className="text-xs text-gray-500 text-right mt-1">10:38 AM</div>
                     </div>
                   </div>
                 </div>
                 
-                {/* Chat Input */}
-                <div className="p-4 border-t bg-gradient-to-r from-white to-qenty-grey/20">
-                  <div className="bg-gray-100 rounded-full px-4 py-3 text-gray-500 text-sm flex items-center">
-                    <span>Type a message...</span>
-                    <div className="ml-auto w-2 h-2 bg-qenty-blue rounded-full animate-pulse"></div>
+                {/* WhatsApp Chat Input */}
+                <div className="p-2 border-t border-gray-300 bg-[#F0F0F0]">
+                  <div className="bg-white rounded-full px-4 py-2 text-gray-500 text-sm flex items-center shadow-sm">
+                    <span>Type a message</span>
+                    <div className="ml-auto text-gray-400">😊</div>
                   </div>
                 </div>
               </div>
