@@ -1,7 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { CheckCircle, MessageSquare, TrendingUp, Shield, Users, Building, Phone, Mail, ArrowRight, FileText, Package, CreditCard, Globe } from "lucide-react";
+import { CheckCircle, MessageSquare, TrendingUp, Shield, Users, Building, Phone, Mail, ArrowRight, FileText, Package, CreditCard, Globe, BarChart3 } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Index = () => {
@@ -102,7 +102,7 @@ const Index = () => {
                   <item.icon className="w-5 h-5" />
                 </div>
                 <p className="mt-4 font-semibold text-qenty-navy text-lg">{item.title}</p>
-                <p className="text-sm text-qenty-navy/70 mt-1">{item.description}</p>
+                <p className="text-sm text-qenty-navy/90 mt-1">{item.description}</p>
               </div>
             ))}
           </div>
@@ -144,7 +144,7 @@ const Index = () => {
                     </div>
                     <div>
                       <p className="font-semibold text-qenty-navy text-lg">{item.title}</p>
-                      <p className="text-base text-qenty-navy/70">{item.description}</p>
+                      <p className="text-base text-qenty-navy/90">{item.description}</p>
                     </div>
                   </div>
                 </CardContent>
@@ -160,7 +160,7 @@ const Index = () => {
         <div className="container max-w-4xl mx-auto text-center relative z-10">
           <div className="animate-slide-up">
             <h2 className="text-5xl font-display font-bold mb-8 text-qenty-navy">See Qenty in Action</h2>
-            <p className="text-xl text-qenty-navy/70 mb-16 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-qenty-navy/90 mb-16 max-w-3xl mx-auto leading-relaxed">
               Experience how Qenty transforms your daily business conversations into financial insights.
             </p>
           </div>
@@ -391,7 +391,7 @@ const Index = () => {
         <div className="container max-w-6xl mx-auto relative z-10">
           <div className="text-center mb-20 animate-slide-up">
             <h2 className="text-5xl font-display font-bold mb-6 text-qenty-navy">Why Choose Qenty?</h2>
-            <p className="text-xl text-qenty-navy/70 max-w-3xl mx-auto">Unlock the power of organized finances and data-driven insights</p>
+            <p className="text-xl text-qenty-navy/90 max-w-3xl mx-auto">Unlock the power of organized finances and data-driven insights</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {[
@@ -406,6 +406,12 @@ const Index = () => {
                 description: "Get instant answers about sales, expenses, and cash flow trends.",
                 icon: TrendingUp,
                 gradient: "from-qenty-accent to-qenty-blue"
+              },
+              {
+                title: "Financial Analytics",
+                description: "Track your business performance with detailed analytics and visual reports.",
+                icon: BarChart3,
+                gradient: "from-qenty-navy to-qenty-accent"
               },
               {
                 title: "Credibility with Lenders",
@@ -427,7 +433,7 @@ const Index = () => {
                     <benefit.icon className="w-10 h-10 text-white" />
                   </div>
                   <h3 className="text-2xl font-display font-semibold mb-6 text-qenty-navy group-hover:text-qenty-blue transition-colors">{benefit.title}</h3>
-                  <p className="text-qenty-navy/70 text-lg leading-relaxed">{benefit.description}</p>
+                  <p className="text-qenty-navy/90 text-lg leading-relaxed">{benefit.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -462,7 +468,7 @@ const Index = () => {
                   <p className="text-lg mb-6 italic text-qenty-navy">"{testimonial.quote}"</p>
                   <div className="border-t pt-4">
                     <p className="font-semibold text-qenty-navy">{testimonial.name}</p>
-                    <p className="text-sm text-qenty-navy/70">{testimonial.title}</p>
+                    <p className="text-sm text-qenty-navy/90">{testimonial.title}</p>
                   </div>
                 </CardContent>
               </Card>
@@ -504,7 +510,7 @@ const Index = () => {
                   <h3 className="text-2xl font-semibold mb-6 text-qenty-navy">{category.title}</h3>
                   <ul className="space-y-3">
                     {category.items.map((item, i) => (
-                      <li key={i} className="text-qenty-navy/70 text-lg">{item}</li>
+                      <li key={i} className="text-qenty-navy/90 text-lg">{item}</li>
                     ))}
                   </ul>
                 </CardContent>
@@ -544,13 +550,13 @@ const Index = () => {
             <div className="flex flex-col items-center">
               <Mail className="w-8 h-8 text-qenty-blue mb-4" />
               <h3 className="text-lg font-semibold mb-2 text-qenty-navy">Email</h3>
-              <p className="text-qenty-navy/70">qenty.ai@gmail.com</p>
+              <p className="text-qenty-navy/90">qenty.ai@gmail.com</p>
             </div>
             <div className="flex flex-col items-center">
               <Phone className="w-8 h-8 text-qenty-blue mb-4" />
               <h3 className="text-lg font-semibold mb-2 text-qenty-navy">Phone</h3>
-              <p className="text-qenty-navy/70">+254727705173</p>
-              <p className="text-qenty-navy/70">+254702735380</p>
+              <p className="text-qenty-navy/90">+254727705173</p>
+              <p className="text-qenty-navy/90">+254702735380</p>
             </div>
             <div className="flex flex-col items-center">
               <MessageSquare className="w-8 h-8 text-qenty-blue mb-4" />
@@ -564,7 +570,7 @@ const Index = () => {
           </div>
           
           <div className="mt-12 pt-8 border-t text-center">
-            <div className="flex flex-col sm:flex-row justify-center gap-6 text-sm text-qenty-navy/70">
+            <div className="flex flex-col sm:flex-row justify-center gap-6 text-sm text-qenty-navy/90">
               <a href="#" className="hover:text-qenty-blue transition-colors">How It Works</a>
               <Link to="/about" className="hover:text-qenty-blue transition-colors">About Us</Link>
               <a href="#" className="hover:text-qenty-blue transition-colors">Privacy Policy</a>
