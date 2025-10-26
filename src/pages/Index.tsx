@@ -37,9 +37,11 @@ const Index = () => {
               Qenty transforms your daily transactions into a Unified Financial Profile lenders can trust. Access via WhatsApp or web - your choice.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-              <Button size="lg" className="bg-white text-qenty-navy hover:bg-white/90 shadow-qenty hover-lift font-semibold px-8 py-4">
-                <MessageSquare className="mr-3 h-5 w-5" />
-                Try Demo on WhatsApp
+              <Button size="lg" className="bg-white text-qenty-navy hover:bg-white/90 shadow-qenty hover-lift font-semibold px-8 py-4" asChild>
+                <a href="https://wa.me/254794760625" target="_blank" rel="noopener noreferrer">
+                  <MessageSquare className="mr-3 h-5 w-5" />
+                  Try Demo on WhatsApp
+                </a>
               </Button>
               <Button variant="secondary" size="lg" className="glass-effect text-white border-white/30 hover:bg-white hover:text-qenty-navy font-semibold px-8 py-4 transition-spring">
                 Join Qenty Today
@@ -279,9 +281,11 @@ const Index = () => {
           </div>
           
           <div className="mt-16 animate-fade-in" style={{animationDelay: '1s'}}>
-            <Button size="lg" className="bg-gradient-to-r from-qenty-blue to-qenty-blue-dark hover:from-qenty-blue-dark hover:to-qenty-navy shadow-qenty hover-lift font-semibold px-8 py-4">
-              <MessageSquare className="mr-3 h-5 w-5" />
-              Try the Demo on WhatsApp
+            <Button size="lg" className="bg-gradient-to-r from-qenty-blue to-qenty-blue-dark hover:from-qenty-blue-dark hover:to-qenty-navy shadow-qenty hover-lift font-semibold px-8 py-4" asChild>
+              <a href="https://wa.me/254794760625" target="_blank" rel="noopener noreferrer">
+                <MessageSquare className="mr-3 h-5 w-5" />
+                Try the Demo on WhatsApp
+              </a>
             </Button>
           </div>
         </div>
@@ -424,9 +428,11 @@ const Index = () => {
             Join thousands of businesses already building their financial future with Qenty.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white text-qenty-navy hover:bg-white/90 shadow-qenty">
-              <MessageSquare className="mr-2 h-5 w-5" />
-              Try Demo on WhatsApp
+            <Button size="lg" className="bg-white text-qenty-navy hover:bg-white/90 shadow-qenty" asChild>
+              <a href="https://wa.me/254794760625" target="_blank" rel="noopener noreferrer">
+                <MessageSquare className="mr-2 h-5 w-5" />
+                Try Demo on WhatsApp
+              </a>
             </Button>
             <Button variant="secondary" size="lg" className="bg-white/20 text-white border-white/30 hover:bg-white hover:text-qenty-navy font-semibold">
               Join Qenty Today
@@ -452,7 +458,11 @@ const Index = () => {
             <div className="flex flex-col items-center">
               <MessageSquare className="w-8 h-8 text-qenty-blue mb-4" />
               <h3 className="text-lg font-semibold mb-2 text-qenty-navy">WhatsApp</h3>
-              <Button className="bg-qenty-blue hover:bg-qenty-blue-dark">Chat on WhatsApp</Button>
+              <Button className="bg-qenty-blue hover:bg-qenty-blue-dark" asChild>
+                <a href="https://wa.me/254794760625" target="_blank" rel="noopener noreferrer">
+                  Chat on WhatsApp
+                </a>
+              </Button>
             </div>
           </div>
           
