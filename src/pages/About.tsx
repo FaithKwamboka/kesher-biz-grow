@@ -78,20 +78,20 @@ const About = () => {
                 <div className="bg-gradient-to-br from-qenty-blue to-qenty-navy rounded-3xl p-8 shadow-qenty">
                   <div className="grid grid-cols-2 gap-6 text-white">
                     <div className="text-center">
-                      <div className="text-3xl font-bold mb-2">40M+</div>
-                      <div className="text-sm opacity-90">Small Businesses</div>
+                      <div className="text-3xl font-bold mb-2">1.6M+</div>
+                      <div className="text-sm opacity-90">Licensed MSMEs in Kenya</div>
                     </div>
                     <div className="text-center">
-                      <div className="text-3xl font-bold mb-2">$300B</div>
-                      <div className="text-sm opacity-90">Informal Economy</div>
+                      <div className="text-3xl font-bold mb-2">33%</div>
+                      <div className="text-sm opacity-90">Contribution to Kenya's GDP</div>
                     </div>
                     <div className="text-center">
-                      <div className="text-3xl font-bold mb-2">80%</div>
-                      <div className="text-sm opacity-90">Lack Bank Access</div>
+                      <div className="text-3xl font-bold mb-2">83%</div>
+                      <div className="text-sm opacity-90">Workforce in Informal Sector</div>
                     </div>
                     <div className="text-center">
-                      <div className="text-3xl font-bold mb-2">90%</div>
-                      <div className="text-sm opacity-90">Use Paper Records</div>
+                      <div className="text-3xl font-bold mb-2">75%</div>
+                      <div className="text-sm opacity-90">Lack Access to Credit</div>
                     </div>
                   </div>
                 </div>
@@ -309,18 +309,18 @@ const About = () => {
                 <div className="bg-gradient-to-br from-qenty-accent to-qenty-navy rounded-3xl p-8 shadow-qenty">
                   <div className="text-center text-white mb-8">
                     <h3 className="text-2xl font-bold mb-4">Our Impact Goal</h3>
-                    <div className="text-4xl font-bold mb-2">1M+</div>
-                    <div className="text-sm opacity-90">Businesses Empowered by 2030</div>
+                    <div className="text-4xl font-bold mb-2">100K+</div>
+                    <div className="text-sm opacity-90">Businesses Empowered by 2027</div>
                   </div>
                   
                   <div className="grid grid-cols-2 gap-4 text-white">
                     <div className="bg-white/10 rounded-2xl p-4 text-center">
-                      <div className="text-2xl font-bold mb-1">50+</div>
+                      <div className="text-2xl font-bold mb-1">10+</div>
                       <div className="text-xs opacity-90">Partner Lenders</div>
                     </div>
                     <div className="bg-white/10 rounded-2xl p-4 text-center">
-                      <div className="text-2xl font-bold mb-1">$10B</div>
-                      <div className="text-xs opacity-90">Credit Unlocked</div>
+                      <div className="text-2xl font-bold mb-1">KES 1B+</div>
+                      <div className="text-xs opacity-90">Credit Facilitated</div>
                     </div>
                   </div>
                 </div>
