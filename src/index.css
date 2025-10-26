@@ -50,6 +50,7 @@ All colors MUST be HSL.
     
     /* Enhanced Gradients */
     --gradient-hero: linear-gradient(135deg, hsl(var(--qenty-navy)), hsl(var(--qenty-blue)), hsl(var(--qenty-sky)));
+    --gradient-success: linear-gradient(135deg, hsl(var(--qenty-accent)), hsl(142 60% 45%));
     --gradient-light: linear-gradient(135deg, hsl(var(--qenty-grey)), rgba(255, 255, 255, 0.8));
     --gradient-card: linear-gradient(145deg, rgba(255, 255, 255, 0.9), rgba(248, 250, 252, 0.6));
     --gradient-accent: linear-gradient(135deg, hsl(var(--qenty-accent)), hsl(var(--qenty-blue)));
@@ -131,6 +132,10 @@ All colors MUST be HSL.
 @layer components {
   .bg-gradient-hero {
     background: var(--gradient-hero);
+  }
+  
+  .bg-gradient-success {
+    background: var(--gradient-success);
   }
   
   .bg-gradient-light {
