@@ -43,8 +43,10 @@ const Index = () => {
                   Try Demo on WhatsApp
                 </a>
               </Button>
-              <Button variant="secondary" size="lg" className="glass-effect text-white border-white/30 hover:bg-white hover:text-qenty-navy font-semibold px-8 py-4 transition-spring">
-                Join Qenty Today
+              <Button variant="secondary" size="lg" className="glass-effect text-white border-white/30 hover:bg-white hover:text-qenty-navy font-semibold px-8 py-4 transition-spring" asChild>
+                <a href="https://Kesher.replit.app" target="_blank" rel="noopener noreferrer">
+                  Join Qenty Today
+                </a>
               </Button>
             </div>
           </div>
@@ -434,8 +436,10 @@ const Index = () => {
                 Try Demo on WhatsApp
               </a>
             </Button>
-            <Button variant="secondary" size="lg" className="bg-white/20 text-white border-white/30 hover:bg-white hover:text-qenty-navy font-semibold">
-              Join Qenty Today
+            <Button variant="secondary" size="lg" className="bg-white/20 text-white border-white/30 hover:bg-white hover:text-qenty-navy font-semibold" asChild>
+              <a href="https://Kesher.replit.app" target="_blank" rel="noopener noreferrer">
+                Join Qenty Today
+              </a>
             </Button>
           </div>
         </div>
