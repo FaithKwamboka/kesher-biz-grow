@@ -225,32 +225,32 @@ const Index = () => {
                     </div>
                   </div>
                   
-                  {/* Invoice with PDF */}
+                  {/* Receipt with PDF */}
                   <div className="flex justify-start animate-slide-up" style={{animationDelay: '0.6s'}}>
                     <div className="bg-white px-3 py-2 rounded-lg rounded-tl-none max-w-[85%] shadow-sm">
                       {/* PDF Preview */}
                       <div className="bg-gray-100 rounded p-3 mb-2 flex items-start gap-2">
                         <div className="text-3xl">📄</div>
                         <div className="flex-1">
-                          <div className="text-xs font-semibold text-gray-700 uppercase mb-1">INVOICE</div>
-                          <div className="text-xs text-gray-600">G333270.pdf</div>
-                          <div className="text-xs text-gray-500">2.9 kB • PDF</div>
+                          <div className="text-xs font-semibold text-gray-700 uppercase mb-1">RECEIPT</div>
+                          <div className="text-xs text-gray-600">G795900.pdf</div>
+                          <div className="text-xs text-gray-500">2.8 kB • PDF</div>
                         </div>
                       </div>
                       
                       <div className="flex items-center gap-2 mb-2">
                         <span className="text-green-600">✅</span>
-                        <span className="text-sm font-semibold text-gray-900">Credit Sale Recorded!</span>
+                        <span className="text-sm font-semibold text-gray-900">Cash Sale Recorded!</span>
                       </div>
                       <div className="text-sm text-gray-900 space-y-1">
                         <p className="font-medium">Kamau Farm</p>
-                        <p><span className="text-gray-600">Invoice:</span> G333270</p>
+                        <p><span className="text-gray-600">Receipt:</span> G795900</p>
                         <p><span className="text-gray-600">Total:</span> KES 4,800.00</p>
                         <p className="font-medium mt-1">Items:</p>
                         <ul className="text-xs space-y-0.5 ml-2">
                           <li>• DAP Fertilizer 50kg: 1.0 x KES 4,800.00</li>
                         </ul>
-                        <p className="text-xs text-gray-500 mt-2">📎 Invoice is attached above.</p>
+                        <p className="text-xs text-gray-500 mt-2">📎 Receipt is attached above.</p>
                       </div>
                       <div className="text-xs text-gray-500 text-right mt-2">07:42</div>
                     </div>
