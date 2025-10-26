@@ -478,20 +478,17 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
             {[
               {
-                title: "Micro Sellers",
-                items: ["Kiosks", "Mama mboga", "Boda riders"],
+                title: "Micro & Small Businesses",
                 icon: Users,
                 color: "bg-qenty-sky"
               },
               {
-                title: "Small Shops", 
-                items: ["Salons", "Hardware stores", "Mini-retail"],
+                title: "Medium Enterprises", 
                 icon: Building,
                 color: "bg-qenty-blue"
               },
               {
-                title: "Growth Businesses",
-                items: ["Pharmacies", "Agro-dealers", "Distributors"],
+                title: "Freelancers & Consultants",
                 icon: TrendingUp,
                 color: "bg-qenty-navy"
               }
@@ -501,12 +498,7 @@ const Index = () => {
                   <div className={`w-16 h-16 ${category.color} rounded-full flex items-center justify-center mx-auto mb-6`}>
                     <category.icon className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-2xl font-semibold mb-6 text-qenty-navy">{category.title}</h3>
-                  <ul className="space-y-3">
-                    {category.items.map((item, i) => (
-                      <li key={i} className="text-qenty-navy/90 text-lg">{item}</li>
-                    ))}
-                  </ul>
+                  <h3 className="text-2xl font-semibold text-qenty-navy">{category.title}</h3>
                 </CardContent>
               </Card>
             ))}
