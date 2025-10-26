@@ -31,7 +31,7 @@ const Index = () => {
         <div className="container max-w-6xl mx-auto text-center relative z-10">
           <div className="animate-fade-in">
             <h1 className="text-5xl md:text-7xl font-display font-bold mb-8 text-white leading-tight tracking-tight drop-shadow">
-              Turn Everyday Sales Into <span className="text-white">Bankable Records</span>
+              Turn Daily Business Into <span className="text-white">Bankable Records</span>
             </h1>
             <p className="text-xl md:text-2xl mb-12 text-white/90 max-w-4xl mx-auto leading-relaxed font-light">
               Qenty transforms your daily transactions into a Unified Financial Profile lenders can trust. Access via WhatsApp or web - your choice.
