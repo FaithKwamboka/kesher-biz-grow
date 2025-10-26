@@ -365,11 +365,16 @@ const Index = () => {
             </div>
           </div>
           
-          <div className="mt-16 animate-fade-in" style={{animationDelay: '1s'}}>
+          <div className="mt-16 flex flex-col sm:flex-row gap-6 justify-center items-center animate-fade-in" style={{animationDelay: '1s'}}>
             <Button size="lg" variant="hero" className="shadow-qenty hover-lift font-semibold px-10 py-4" asChild>
+              <a href="#" onClick={(e) => e.preventDefault()}>
+                Watch Demo
+              </a>
+            </Button>
+            <Button size="lg" variant="success" className="shadow-qenty hover-lift font-semibold px-10 py-4" asChild>
               <a href="https://wa.me/254794760625" target="_blank" rel="noopener noreferrer">
                 <MessageSquare className="mr-3 h-5 w-5" />
-                Try the Demo Now
+                Try Qenty on WhatsApp
               </a>
             </Button>
           </div>
