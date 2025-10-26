@@ -38,21 +38,15 @@ All colors MUST be HSL.
     --input: 214.3 31.8% 91.4%;
     --ring: 142 76% 36%;
 
-    /* Enhanced Qenty Design Tokens - Blue Focus */
+    /* Core Qenty Brand Colors */
     --qenty-navy: 215 30% 25%;
-    --qenty-navy-light: 215 25% 35%;
-    --qenty-sky: 206 100% 85%;
-    --qenty-sky-dark: 206 80% 70%;
     --qenty-blue: 210 100% 65%;
-    --qenty-blue-dark: 210 100% 45%;
     --qenty-accent: 142 50% 50%;
     --qenty-grey: 220 15% 95%;
     
-    /* Enhanced Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(var(--qenty-navy)), hsl(var(--qenty-blue)), hsl(var(--qenty-sky)));
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--qenty-navy)), hsl(var(--qenty-blue)));
     --gradient-success: linear-gradient(135deg, hsl(var(--qenty-accent)), hsl(142 60% 45%));
-    --gradient-light: linear-gradient(135deg, hsl(var(--qenty-grey)), rgba(255, 255, 255, 0.8));
-    --gradient-card: linear-gradient(145deg, rgba(255, 255, 255, 0.9), rgba(248, 250, 252, 0.6));
     --gradient-accent: linear-gradient(135deg, hsl(var(--qenty-accent)), hsl(var(--qenty-blue)));
     
     /* Advanced Shadows */

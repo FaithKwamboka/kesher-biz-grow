@@ -54,18 +54,12 @@ export default {
         },
         qenty: {
           navy: "hsl(var(--qenty-navy))",
-          "navy-light": "hsl(var(--qenty-navy-light))",
-          sky: "hsl(var(--qenty-sky))",
-          "sky-dark": "hsl(var(--qenty-sky-dark))",
           blue: "hsl(var(--qenty-blue))",
-          "blue-dark": "hsl(var(--qenty-blue-dark))",
           accent: "hsl(var(--qenty-accent))",
           grey: "hsl(var(--qenty-grey))",
         },
         "qenty-navy": "hsl(var(--qenty-navy))",
         "qenty-blue": "hsl(var(--qenty-blue))",
-        "qenty-blue-dark": "hsl(var(--qenty-blue-dark))",
-        "qenty-sky": "hsl(var(--qenty-sky))",
         "qenty-grey": "hsl(var(--qenty-grey))",
         "qenty-accent": "hsl(var(--qenty-accent))",
         sidebar: {
