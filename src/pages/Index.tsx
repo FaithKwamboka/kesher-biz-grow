@@ -21,6 +21,9 @@ const Index = () => {
               <Link to="/about" className="text-qenty-navy hover:text-qenty-blue transition-colors">
                 About
               </Link>
+              <a href="https://qenty.replit.app/auth/signup" className="text-qenty-navy hover:text-qenty-blue transition-colors">
+                Login
+              </a>
             </div>
           </div>
         </div>
