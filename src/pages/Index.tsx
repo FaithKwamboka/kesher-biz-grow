@@ -186,170 +186,145 @@ const Index = () => {
                 </div>
                 
                 {/* Chat Messages - WhatsApp Background Pattern */}
-                <div className="p-3 space-y-2 h-96 overflow-y-auto bg-[#E5DDD5] relative" style={{backgroundImage: "url(\"data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d1c9bf' fill-opacity='0.15'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E\")"}}>
+                <div className="p-3 space-y-3 h-96 overflow-y-auto bg-[#E5DDD5] relative" style={{backgroundImage: "url(\"data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d1c9bf' fill-opacity='0.15'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E\")"}}>
                   
-                  {/* Incoming message */}
+                  {/* Welcome Message */}
+                  <div className="flex justify-start animate-slide-up" style={{animationDelay: '0.3s'}}>
+                    <div className="bg-white px-3 py-2 rounded-lg rounded-tl-none max-w-[80%] shadow-sm">
+                      <div className="text-sm text-gray-900 font-medium mb-2">
+                        Welcome back!<br/>What would you like to do today?
+                      </div>
+                      <div className="text-xs text-gray-500 text-right mt-1">07:40</div>
+                    </div>
+                  </div>
+                  
+                  {/* Action Buttons */}
                   <div className="flex justify-start animate-slide-up" style={{animationDelay: '0.5s'}}>
-                    <div className="bg-white px-3 py-2 rounded-lg rounded-tl-none max-w-[75%] shadow-sm">
-                      <div className="text-sm text-gray-900">
-                        👋 Welcome back, Grace! Ready to track today's sales?
-                      </div>
-                      <div className="text-xs text-gray-500 text-right mt-1">10:32 AM</div>
+                    <div className="bg-white px-4 py-3 rounded-lg rounded-tl-none max-w-[80%] shadow-sm space-y-2">
+                      <button className="flex items-center gap-2 text-sm text-[#128C7E] hover:underline w-full text-left">
+                        <span>↩️</span>
+                        <span className="font-medium">Record a Sale</span>
+                      </button>
+                      <button className="flex items-center gap-2 text-sm text-[#128C7E] hover:underline w-full text-left">
+                        <span>↩️</span>
+                        <span className="font-medium">Record an Expense</span>
+                      </button>
+                      <button className="flex items-center gap-2 text-sm text-[#128C7E] hover:underline w-full text-left">
+                        <span>☰</span>
+                        <span className="font-medium">See all options</span>
+                      </button>
                     </div>
                   </div>
                   
-                  {/* Outgoing message */}
-                  <div className="flex justify-end animate-slide-up" style={{animationDelay: '0.7s'}}>
-                    <div className="bg-[#DCF8C6] px-3 py-2 rounded-lg rounded-tr-none max-w-[75%] shadow-sm">
-                      <div className="text-sm text-gray-900">
-                        Yes! Today I got 3,500 KES from hair treatments
+                  {/* Sale Confirmation with Details */}
+                  <div className="flex justify-start animate-slide-up" style={{animationDelay: '0.7s'}}>
+                    <div className="bg-white px-3 py-2 rounded-lg rounded-tl-none max-w-[85%] shadow-sm">
+                      <div className="flex items-center gap-2 mb-2">
+                        <span className="text-green-600">✅</span>
+                        <span className="text-sm font-semibold text-gray-900">Credit Sale Recorded!</span>
                       </div>
-                      <div className="text-xs text-gray-600 text-right mt-1 flex items-center justify-end gap-1">
-                        10:33 AM
-                        <span className="text-blue-500">✓✓</span>
+                      <div className="text-sm text-gray-900 space-y-1 mt-2">
+                        <p className="font-medium">Gwanji Ltd</p>
+                        <p><span className="text-gray-600">Invoice Number:</span> G333270</p>
+                        <p><span className="text-gray-600">Total Amount:</span> KES 8,800.00</p>
+                        <p className="font-medium mt-2">Items Sold:</p>
+                        <ul className="text-xs space-y-0.5 ml-2">
+                          <li>• Hybrid Maize Seed 10kg: 1.0 x KES 4,000.00</li>
+                          <li>• Bean Seed 1kg: 20.0 x KES 240.00</li>
+                        </ul>
                       </div>
+                      <div className="text-xs text-gray-500 text-right mt-2">07:40</div>
                     </div>
                   </div>
                   
-                  {/* Incoming message */}
+                  {/* Expense Confirmation */}
                   <div className="flex justify-start animate-slide-up" style={{animationDelay: '0.9s'}}>
+                    <div className="bg-white px-3 py-2 rounded-lg rounded-tl-none max-w-[80%] shadow-sm">
+                      <div className="flex items-center gap-2 mb-2">
+                        <span className="text-green-600">✅</span>
+                        <span className="text-sm font-semibold text-gray-900">Expense Recorded!</span>
+                      </div>
+                      <div className="text-sm text-gray-900 space-y-1 mt-2">
+                        <p className="font-medium">Gwanji Ltd</p>
+                        <p><span className="text-gray-600">Category:</span> Transport</p>
+                        <p><span className="text-gray-600">Description:</span> Transport clients goods</p>
+                        <p><span className="text-gray-600">Amount:</span> KES 200.00</p>
+                        <p><span className="text-gray-600">Payment Method:</span> Cash</p>
+                      </div>
+                      <div className="text-xs text-gray-500 text-right mt-2">11:05</div>
+                    </div>
+                  </div>
+                  
+                  {/* System Notification */}
+                  <div className="flex justify-start animate-slide-up" style={{animationDelay: '1.1s'}}>
                     <div className="bg-white px-3 py-2 rounded-lg rounded-tl-none max-w-[75%] shadow-sm">
                       <div className="text-sm text-gray-900">
-                        ✅ Logged! 3,500 KES recorded for hair treatments today.
+                        Your expense has been logged successfully.
                       </div>
-                      <div className="text-xs text-gray-500 text-right mt-1">10:33 AM</div>
+                      <div className="text-xs text-gray-500 text-right mt-1">11:05</div>
                     </div>
                   </div>
                   
-                  {/* Outgoing message */}
-                  <div className="flex justify-end animate-slide-up" style={{animationDelay: '1.1s'}}>
-                    <div className="bg-[#DCF8C6] px-3 py-2 rounded-lg rounded-tr-none max-w-[75%] shadow-sm">
-                      <div className="text-sm text-gray-900">
-                        Also spent 800 KES on hair products
-                      </div>
-                      <div className="text-xs text-gray-600 text-right mt-1 flex items-center justify-end gap-1">
-                        10:34 AM
-                        <span className="text-blue-500">✓✓</span>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  {/* Incoming message */}
+                  {/* Cash Sale */}
                   <div className="flex justify-start animate-slide-up" style={{animationDelay: '1.3s'}}>
-                    <div className="bg-white px-3 py-2 rounded-lg rounded-tl-none max-w-[75%] shadow-sm">
-                      <div className="text-sm text-gray-900">
-                        ✅ Expense recorded: 800 KES for hair products.
+                    <div className="bg-white px-3 py-2 rounded-lg rounded-tl-none max-w-[85%] shadow-sm">
+                      <div className="flex items-center gap-2 mb-2">
+                        <span className="text-green-600">✅</span>
+                        <span className="text-sm font-semibold text-gray-900">Cash Sale Recorded!</span>
                       </div>
-                      <div className="text-xs text-gray-500 text-right mt-1">10:34 AM</div>
+                      <div className="text-sm text-gray-900 space-y-1 mt-2">
+                        <p className="font-medium">Gwanji Ltd</p>
+                        <p><span className="text-gray-600">Total Amount:</span> KES 75,960.00</p>
+                        <p className="font-medium mt-2">Items Sold:</p>
+                        <ul className="text-xs space-y-0.5 ml-2">
+                          <li>• CAN 50kg: 5.0 x KES 3,600.00</li>
+                          <li>• NPK 17-17-17 50kg: 10.0 x KES 4,600.00</li>
+                          <li>• Fertilizer Spreader: 5.0 x KES 1,700.00</li>
+                        </ul>
+                      </div>
+                      <div className="text-xs text-gray-500 text-right mt-2">11:02</div>
                     </div>
                   </div>
                   
-                  {/* Outgoing message */}
-                  <div className="flex justify-end animate-slide-up" style={{animationDelay: '1.5s'}}>
+                  {/* Product Update */}
+                  <div className="flex justify-start animate-slide-up" style={{animationDelay: '1.5s'}}>
+                    <div className="bg-white px-3 py-2 rounded-lg rounded-tl-none max-w-[80%] shadow-sm">
+                      <div className="flex items-center gap-2 mb-2">
+                        <span>✏️</span>
+                        <span className="text-sm font-semibold text-gray-900">Product Updated!</span>
+                      </div>
+                      <div className="text-sm text-gray-900 mt-2">
+                        <p className="flex items-center gap-1">
+                          <span className="text-green-600">✅</span>
+                          <span>DAP Fertilizer 50kg has been successfully updated in Gwanji Ltd's catalogue</span>
+                        </p>
+                      </div>
+                      <div className="text-xs text-gray-500 text-right mt-2">07:59</div>
+                    </div>
+                  </div>
+                  
+                  {/* User Message */}
+                  <div className="flex justify-end animate-slide-up" style={{animationDelay: '1.7s'}}>
                     <div className="bg-[#DCF8C6] px-3 py-2 rounded-lg rounded-tr-none max-w-[75%] shadow-sm">
                       <div className="text-sm text-gray-900">
-                        What's my profit this week?
+                        Hello Kesher
                       </div>
                       <div className="text-xs text-gray-600 text-right mt-1 flex items-center justify-end gap-1">
-                        10:35 AM
+                        15:53
                         <span className="text-blue-500">✓✓</span>
                       </div>
                     </div>
                   </div>
                   
-                  {/* Incoming message */}
-                  <div className="flex justify-start animate-slide-up" style={{animationDelay: '1.7s'}}>
-                    <div className="bg-white px-3 py-2 rounded-lg rounded-tl-none max-w-[75%] shadow-sm">
-                      <div className="text-sm text-gray-900">
-                        This week: Sales 18,500 KES, Expenses 4,200 KES. Your profit is 14,300 KES! 📈
+                  {/* Onboarding Flow */}
+                  <div className="flex justify-start animate-slide-up" style={{animationDelay: '1.9s'}}>
+                    <div className="bg-white px-3 py-2 rounded-lg rounded-tl-none max-w-[85%] shadow-sm">
+                      <div className="text-sm text-gray-900 space-y-2">
+                        <p className="font-medium">Welcome to Kesher, your Business Copilot! 🚀</p>
+                        <p>I'm here to help you track sales, manage cashflow, and grow your business.</p>
+                        <p className="mt-2">To get started, what's the name of your business?</p>
                       </div>
-                      <div className="text-xs text-gray-500 text-right mt-1">10:35 AM</div>
-                    </div>
-                  </div>
-                  
-                  {/* Outgoing message */}
-                  <div className="flex justify-end animate-slide-up" style={{animationDelay: '1.9s'}}>
-                    <div className="bg-[#DCF8C6] px-3 py-2 rounded-lg rounded-tr-none max-w-[75%] shadow-sm">
-                      <div className="text-sm text-gray-900">
-                        I need a loan for new equipment
-                      </div>
-                      <div className="text-xs text-gray-600 text-right mt-1 flex items-center justify-end gap-1">
-                        10:36 AM
-                        <span className="text-blue-500">✓✓</span>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  {/* Incoming message */}
-                  <div className="flex justify-start animate-slide-up" style={{animationDelay: '2.1s'}}>
-                    <div className="bg-white px-3 py-2 rounded-lg rounded-tl-none max-w-[75%] shadow-sm">
-                      <div className="text-sm text-gray-900">
-                        Your UFP shows steady monthly profit of 52,000 KES. I can connect you with partner lenders! 💰
-                      </div>
-                      <div className="text-xs text-gray-500 text-right mt-1">10:36 AM</div>
-                    </div>
-                  </div>
-                  
-                  {/* Incoming message */}
-                  <div className="flex justify-start animate-slide-up" style={{animationDelay: '2.3s'}}>
-                    <div className="bg-white px-3 py-2 rounded-lg rounded-tl-none max-w-[75%] shadow-sm">
-                      <div className="text-sm text-gray-900">
-                        📋 Based on your profile, you qualify for:
-                      </div>
-                      <div className="text-xs text-gray-500 text-right mt-1">10:37 AM</div>
-                    </div>
-                  </div>
-                  
-                  {/* Incoming message */}
-                  <div className="flex justify-start animate-slide-up" style={{animationDelay: '2.5s'}}>
-                    <div className="bg-white px-3 py-2 rounded-lg rounded-tl-none max-w-[75%] shadow-sm">
-                      <div className="text-sm text-gray-900">
-                        🏦 KWFT: Up to 100,000 KES at 15% interest
-                      </div>
-                      <div className="text-xs text-gray-500 text-right mt-1">10:37 AM</div>
-                    </div>
-                  </div>
-                  
-                  {/* Incoming message */}
-                  <div className="flex justify-start animate-slide-up" style={{animationDelay: '2.7s'}}>
-                    <div className="bg-white px-3 py-2 rounded-lg rounded-tl-none max-w-[75%] shadow-sm">
-                      <div className="text-sm text-gray-900">
-                        🏦 Faulu Bank: Up to 150,000 KES at 18% interest
-                      </div>
-                      <div className="text-xs text-gray-500 text-right mt-1">10:37 AM</div>
-                    </div>
-                  </div>
-                  
-                  {/* Incoming message */}
-                  <div className="flex justify-start animate-slide-up" style={{animationDelay: '2.9s'}}>
-                    <div className="bg-white px-3 py-2 rounded-lg rounded-tl-none max-w-[75%] shadow-sm">
-                      <div className="text-sm text-gray-900">
-                        🏦 SMEP: Up to 80,000 KES at 14% interest
-                      </div>
-                      <div className="text-xs text-gray-500 text-right mt-1">10:38 AM</div>
-                    </div>
-                  </div>
-                  
-                  {/* Outgoing message */}
-                  <div className="flex justify-end animate-slide-up" style={{animationDelay: '3.1s'}}>
-                    <div className="bg-[#DCF8C6] px-3 py-2 rounded-lg rounded-tr-none max-w-[75%] shadow-sm">
-                      <div className="text-sm text-gray-900">
-                        Tell me more about SMEP
-                      </div>
-                      <div className="text-xs text-gray-600 text-right mt-1 flex items-center justify-end gap-1">
-                        10:38 AM
-                        <span className="text-blue-500">✓✓</span>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  {/* Incoming message */}
-                  <div className="flex justify-start animate-slide-up" style={{animationDelay: '3.3s'}}>
-                    <div className="bg-white px-3 py-2 rounded-lg rounded-tl-none max-w-[75%] shadow-sm">
-                      <div className="text-sm text-gray-900">
-                        SMEP offers the best rate at 14%. Fast approval in 3 days. Shall I share your UFP with them?
-                      </div>
-                      <div className="text-xs text-gray-500 text-right mt-1">10:38 AM</div>
+                      <div className="text-xs text-gray-500 text-right mt-2">15:54</div>
                     </div>
                   </div>
                 </div>
