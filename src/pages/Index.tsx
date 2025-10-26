@@ -37,13 +37,13 @@ const Index = () => {
               Track sales, manage inventory, log expenses - all via WhatsApp or web. Build a financial profile lenders recognize and trust.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-              <Button size="lg" className="bg-white text-qenty-navy hover:bg-white/90 shadow-qenty hover-lift font-semibold px-8 py-4" asChild>
+              <Button size="lg" variant="success" className="shadow-qenty hover-lift font-semibold px-8 py-4" asChild>
                 <a href="https://wa.me/254794760625" target="_blank" rel="noopener noreferrer">
                   <MessageSquare className="mr-3 h-5 w-5" />
                   Try Qenty on WhatsApp
                 </a>
               </Button>
-              <Button variant="secondary" size="lg" className="glass-effect text-white border-white/30 hover:bg-white hover:text-qenty-navy font-semibold px-8 py-4 transition-spring" asChild>
+              <Button size="lg" variant="hero" className="shadow-qenty hover-lift font-semibold px-8 py-4" asChild>
                 <a href="https://Kesher.replit.app" target="_blank" rel="noopener noreferrer">
                   Join Qenty Today
                 </a>
@@ -518,14 +518,14 @@ const Index = () => {
           <p className="text-xl text-white/90 mb-12 max-w-2xl mx-auto">
             Join thousands of businesses already building their financial future with Qenty.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white text-qenty-navy hover:bg-white/90 shadow-qenty" asChild>
+          <div className="flex flex-col sm:flex-row gap-6 justify-center">
+            <Button size="lg" variant="success" className="shadow-qenty hover-lift font-semibold px-8 py-4" asChild>
               <a href="https://wa.me/254794760625" target="_blank" rel="noopener noreferrer">
-                <MessageSquare className="mr-2 h-5 w-5" />
+                <MessageSquare className="mr-3 h-5 w-5" />
                 Try Qenty on WhatsApp
               </a>
             </Button>
-            <Button variant="secondary" size="lg" className="bg-white/20 text-white border-white/30 hover:bg-white hover:text-qenty-navy font-semibold" asChild>
+            <Button size="lg" variant="hero" className="shadow-qenty hover-lift font-semibold px-8 py-4" asChild>
               <a href="https://Kesher.replit.app" target="_blank" rel="noopener noreferrer">
                 Join Qenty Today
               </a>
@@ -552,7 +552,7 @@ const Index = () => {
             <div className="flex flex-col items-center">
               <MessageSquare className="w-8 h-8 text-qenty-blue mb-4" />
               <h3 className="text-lg font-semibold mb-2 text-qenty-navy">WhatsApp</h3>
-              <Button className="bg-qenty-blue hover:bg-qenty-blue-dark" asChild>
+              <Button variant="success" className="shadow-qenty hover-lift font-semibold" asChild>
                 <a href="https://wa.me/254794760625" target="_blank" rel="noopener noreferrer">
                   Chat on WhatsApp
                 </a>
