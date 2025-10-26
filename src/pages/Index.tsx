@@ -31,10 +31,10 @@ const Index = () => {
         <div className="container max-w-6xl mx-auto text-center relative z-10">
           <div className="animate-fade-in">
             <h1 className="text-5xl md:text-7xl font-display font-bold mb-8 text-white leading-tight tracking-tight drop-shadow">
-              Turn Daily Business Into <span className="text-white">Bankable Records</span>
+              Your Business Data, <span className="text-white">Now Bankable</span>
             </h1>
             <p className="text-xl md:text-2xl mb-12 text-white/90 max-w-4xl mx-auto leading-relaxed font-light">
-              Qenty transforms your daily transactions into a Unified Financial Profile lenders can trust. Access via WhatsApp or web - your choice.
+              Track sales, manage inventory, log expenses - all via WhatsApp or web. Build a financial profile lenders recognize and trust.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
               <Button size="lg" className="bg-white text-qenty-navy hover:bg-white/90 shadow-qenty hover-lift font-semibold px-8 py-4" asChild>
