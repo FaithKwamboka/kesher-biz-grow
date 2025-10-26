@@ -65,10 +65,10 @@ const About = () => {
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="animate-slide-up" style={{animationDelay: '0.2s'}}>
-              <p className="text-xl text-muted-foreground leading-relaxed mb-8">
+              <p className="text-xl text-qenty-navy/70 leading-relaxed mb-8">
                 Qenty was founded to solve a critical challenge: <strong className="text-qenty-navy">millions of micro and small businesses</strong> across Africa run on paper receipts, M-Pesa messages, and notebooks, making them invisible to formal finance.
               </p>
-              <p className="text-xl text-muted-foreground leading-relaxed">
+              <p className="text-xl text-qenty-navy/70 leading-relaxed">
                 Without proper records, they cannot prove income or access affordable loans. <strong className="text-qenty-blue">We are here to change that.</strong>
               </p>
             </div>
@@ -119,7 +119,7 @@ const About = () => {
           <div className="max-w-4xl mx-auto">
             <Card className="p-12 bg-gradient-card border-0 shadow-qenty hover-lift">
               <CardContent className="pt-6">
-                <p className="text-xl text-muted-foreground leading-relaxed text-center">
+                <p className="text-xl text-qenty-navy/70 leading-relaxed text-center">
                   Our mission is to empower small businesses by transforming <strong className="text-qenty-blue">fragmented financial data</strong> into a single, trusted <strong className="text-qenty-navy">Unified Financial Profile (UFP)</strong>. With Qenty, entrepreneurs gain credibility, insights, and access to the growth capital they deserve - available on WhatsApp or web.
                 </p>
                 
@@ -179,7 +179,7 @@ const About = () => {
                   <h3 className="text-xl font-display font-semibold mb-4 text-qenty-navy group-hover:text-qenty-blue transition-colors">
                     {feature.title}
                   </h3>
-                  <p className="text-muted-foreground leading-relaxed">
+                  <p className="text-qenty-navy/70 leading-relaxed">
                     {feature.description}
                   </p>
                 </CardContent>
@@ -188,7 +188,7 @@ const About = () => {
           </div>
           
           <div className="max-w-4xl mx-auto text-center animate-fade-in" style={{animationDelay: '0.4s'}}>
-            <p className="text-xl text-muted-foreground leading-relaxed">
+            <p className="text-xl text-qenty-navy/70 leading-relaxed">
               This profile is then shared with partner banks, SACCOs, and MFIs to unlock <strong className="text-qenty-blue">embedded lending opportunities</strong>.
             </p>
           </div>
@@ -250,7 +250,7 @@ const About = () => {
                       <h3 className="text-2xl font-display font-semibold mb-4 text-qenty-navy group-hover:text-qenty-blue transition-colors">
                         {value.title}
                       </h3>
-                      <p className="text-muted-foreground leading-relaxed mb-6">
+                      <p className="text-qenty-navy/70 leading-relaxed mb-6">
                         {value.description}
                       </p>
                       <div className="flex flex-wrap gap-2">
@@ -285,7 +285,7 @@ const About = () => {
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="animate-slide-up" style={{animationDelay: '0.2s'}}>
-              <p className="text-xl text-muted-foreground leading-relaxed mb-8">
+              <p className="text-xl text-qenty-navy/70 leading-relaxed mb-8">
                 We envision an Africa where no entrepreneur is excluded from opportunity because of missing records. With Qenty, <strong className="text-qenty-navy">every sale, expense, and receipt</strong> contributes to building a bankable future.
               </p>
               
@@ -298,7 +298,7 @@ const About = () => {
                 ].map((item, i) => (
                   <div key={i} className="flex items-center gap-3 animate-fade-in" style={{animationDelay: `${0.4 + i * 0.1}s`}}>
                     <div className="w-2 h-2 bg-qenty-accent rounded-full"></div>
-                    <span className="text-muted-foreground">{item}</span>
+                    <span className="text-qenty-navy/70">{item}</span>
                   </div>
                 ))}
               </div>
