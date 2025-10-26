@@ -416,14 +416,8 @@ const Index = () => {
               {
                 title: "Credibility with Lenders",
                 description: "Your UFP makes you visible and credible to financial institutions.",
-                icon: Building,
+                icon: CheckCircle,
                 gradient: "from-qenty-sky to-qenty-accent"
-              },
-              {
-                title: "WhatsApp & Web Access",
-                description: "Choose your preferred platform - mobile WhatsApp or web dashboard.",
-                icon: Globe,
-                gradient: "from-qenty-navy to-qenty-blue"
               }
             ].map((benefit, index) => (
               <Card key={index} className="p-10 hover-lift bg-gradient-card border-0 shadow-soft hover:shadow-qenty transition-all duration-500 group relative overflow-hidden" style={{animationDelay: `${index * 0.1}s`}}>
