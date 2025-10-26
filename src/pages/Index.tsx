@@ -480,7 +480,7 @@ const Index = () => {
               {
                 title: "Micro & Small Businesses",
                 icon: ShoppingBag,
-                color: "bg-qenty-sky"
+                color: "bg-qenty-accent"
               },
               {
                 title: "Medium Enterprises", 
