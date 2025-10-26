@@ -1,7 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { CheckCircle, MessageSquare, TrendingUp, Shield, Users, Building, Phone, Mail, ArrowRight, FileText, Package, CreditCard, Globe, BarChart3 } from "lucide-react";
+import { CheckCircle, MessageSquare, TrendingUp, Shield, Users, Building, Phone, Mail, ArrowRight, FileText, Package, CreditCard, Globe, BarChart3, ShoppingBag } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Index = () => {
@@ -479,7 +479,7 @@ const Index = () => {
             {[
               {
                 title: "Micro & Small Businesses",
-                icon: Users,
+                icon: ShoppingBag,
                 color: "bg-qenty-sky"
               },
               {
