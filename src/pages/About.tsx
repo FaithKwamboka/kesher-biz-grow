@@ -345,7 +345,7 @@ const About = () => {
             <Button size="lg" className="bg-white text-qenty-navy hover:bg-white/90 shadow-qenty hover-lift font-semibold px-8 py-4" asChild>
               <a href="https://wa.me/254794760625" target="_blank" rel="noopener noreferrer">
                 <MessageSquare className="mr-3 h-5 w-5" />
-                Try Demo on WhatsApp
+                Try Qenty on WhatsApp
               </a>
             </Button>
           </div>

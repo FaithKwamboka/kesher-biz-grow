@@ -40,7 +40,7 @@ const Index = () => {
               <Button size="lg" className="bg-white text-qenty-navy hover:bg-white/90 shadow-qenty hover-lift font-semibold px-8 py-4" asChild>
                 <a href="https://wa.me/254794760625" target="_blank" rel="noopener noreferrer">
                   <MessageSquare className="mr-3 h-5 w-5" />
-                  Try Demo on WhatsApp
+                  Try Qenty on WhatsApp
                 </a>
               </Button>
               <Button variant="secondary" size="lg" className="glass-effect text-white border-white/30 hover:bg-white hover:text-qenty-navy font-semibold px-8 py-4 transition-spring" asChild>
@@ -286,7 +286,7 @@ const Index = () => {
             <Button size="lg" className="bg-gradient-to-r from-qenty-blue to-qenty-blue-dark hover:from-qenty-blue-dark hover:to-qenty-navy shadow-qenty hover-lift font-semibold px-8 py-4" asChild>
               <a href="https://wa.me/254794760625" target="_blank" rel="noopener noreferrer">
                 <MessageSquare className="mr-3 h-5 w-5" />
-                Try the Demo on WhatsApp
+                Try Qenty on WhatsApp
               </a>
             </Button>
           </div>
@@ -433,7 +433,7 @@ const Index = () => {
             <Button size="lg" className="bg-white text-qenty-navy hover:bg-white/90 shadow-qenty" asChild>
               <a href="https://wa.me/254794760625" target="_blank" rel="noopener noreferrer">
                 <MessageSquare className="mr-2 h-5 w-5" />
-                Try Demo on WhatsApp
+                Try Qenty on WhatsApp
               </a>
             </Button>
             <Button variant="secondary" size="lg" className="bg-white/20 text-white border-white/30 hover:bg-white hover:text-qenty-navy font-semibold" asChild>
