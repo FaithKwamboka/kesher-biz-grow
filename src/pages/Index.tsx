@@ -47,7 +47,7 @@ const Index = () => {
                 </a>
               </Button>
               <Button size="lg" variant="hero" className="shadow-qenty hover-lift font-semibold px-8 py-4" asChild>
-                <a href="https://Kesher.replit.app" target="_blank" rel="noopener noreferrer">
+                <a href="https://qenty.replit.app" target="_blank" rel="noopener noreferrer">
                   Join Qenty Today
                 </a>
               </Button>
@@ -521,7 +521,7 @@ const Index = () => {
               </a>
             </Button>
             <Button size="lg" variant="hero" className="shadow-qenty hover-lift font-semibold px-8 py-4" asChild>
-              <a href="https://Kesher.replit.app" target="_blank" rel="noopener noreferrer">
+              <a href="https://qenty.replit.app" target="_blank" rel="noopener noreferrer">
                 Join Qenty Today
               </a>
             </Button>
