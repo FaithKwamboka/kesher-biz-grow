@@ -561,6 +561,11 @@ const Index = () => {
               <Link to="/about" className="hover:text-qenty-blue transition-colors">About Us</Link>
               <a href="#" className="hover:text-qenty-blue transition-colors">Privacy Policy</a>
             </div>
+            <div className="mt-8 pt-6 border-t">
+              <p className="text-sm text-qenty-navy/70">
+                © {new Date().getFullYear()} Qenty. All rights reserved.
+              </p>
+            </div>
           </div>
         </div>
       </section>
