@@ -21,7 +21,7 @@ const Index = () => {
               <Link to="/about" className="text-qenty-navy hover:text-qenty-blue transition-colors">
                 About
               </Link>
-              <a href="https://qenty.replit.app/auth/signup" className="text-qenty-navy hover:text-qenty-blue transition-colors ml-auto">
+              <a href="https://app.qenty.io/auth/login" className="text-qenty-navy hover:text-qenty-blue transition-colors ml-auto">
                 Login
               </a>
             </div>
@@ -47,7 +47,7 @@ const Index = () => {
                 </a>
               </Button>
               <Button size="lg" variant="hero" className="shadow-qenty hover-lift font-semibold px-8 py-4" asChild>
-                <a href="https://qenty.replit.app" target="_blank" rel="noopener noreferrer">
+                <a href="https://app.qenty.io" target="_blank" rel="noopener noreferrer">
                   Join Qenty Today
                 </a>
               </Button>
@@ -521,7 +521,7 @@ const Index = () => {
               </a>
             </Button>
             <Button size="lg" variant="hero" className="shadow-qenty hover-lift font-semibold px-8 py-4" asChild>
-              <a href="https://qenty.replit.app" target="_blank" rel="noopener noreferrer">
+              <a href="https://app.qenty.io" target="_blank" rel="noopener noreferrer">
                 Join Qenty Today
               </a>
             </Button>
