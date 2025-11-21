@@ -12,7 +12,7 @@ const About = () => {
         <div className="container max-w-6xl mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <Link to="/" className="flex items-center">
-              <img src={qentyLogo} alt="Qenty" className="h-10 w-auto" />
+              <img src={qentyLogo} alt="Qenty" className="h-14 w-auto" />
             </Link>
             <div className="hidden md:flex items-center space-x-8">
               <Link to="/" className="text-qenty-navy hover:text-qenty-blue transition-colors">
