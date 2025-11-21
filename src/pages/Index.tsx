@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { CheckCircle, MessageSquare, TrendingUp, Shield, Users, Building, Phone, Mail, ArrowRight, FileText, Package, CreditCard, Globe, BarChart3, Store, Briefcase, Building2 } from "lucide-react";
 import { Link } from "react-router-dom";
+import qentyLogo from "@/assets/qenty-logo.png";
 
 const Index = () => {
   return (
@@ -11,8 +12,8 @@ const Index = () => {
       <nav className="bg-white/95 backdrop-blur-sm border-b border-qenty-blue/10 sticky top-0 z-50">
         <div className="container max-w-6xl mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <Link to="/" className="text-2xl font-display font-bold text-qenty-navy">
-              Qenty
+            <Link to="/" className="flex items-center">
+              <img src={qentyLogo} alt="Qenty" className="h-10 w-auto" />
             </Link>
             <div className="hidden md:flex items-center space-x-8">
               <Link to="/" className="text-qenty-blue font-semibold">
