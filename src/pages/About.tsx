@@ -2,6 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Shield, Smartphone, Lightbulb, TrendingUp, MessageSquare, Users, Target, Building, ArrowRight, Sparkles, Heart, Globe } from "lucide-react";
 import { Link } from "react-router-dom";
+import qentyLogo from "@/assets/qenty-logo.png";
 
 const About = () => {
   return (
@@ -10,8 +11,8 @@ const About = () => {
       <nav className="bg-white border-b border-qenty-blue/10 sticky top-0 z-50">
         <div className="container max-w-6xl mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <Link to="/" className="text-2xl font-display font-bold text-qenty-navy">
-              Qenty
+            <Link to="/" className="flex items-center">
+              <img src={qentyLogo} alt="Qenty" className="h-10 w-auto" />
             </Link>
             <div className="hidden md:flex items-center space-x-8">
               <Link to="/" className="text-qenty-navy hover:text-qenty-blue transition-colors">
