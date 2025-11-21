@@ -9,7 +9,7 @@ const About = () => {
     <div className="min-h-screen bg-background">
       {/* Navigation */}
       <nav className="bg-white border-b border-qenty-blue/10 sticky top-0 z-50">
-        <div className="container max-w-6xl mx-auto px-4 py-4">
+        <div className="container max-w-6xl mx-auto px-4 py-2">
           <div className="flex items-center justify-between">
             <Link to="/" className="flex items-center">
               <img src={qentyLogo} alt="Qenty" className="h-20 w-auto" />
