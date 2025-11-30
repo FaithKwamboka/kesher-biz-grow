@@ -1,9 +1,14 @@
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, Play } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 import qentyLogo from "@/assets/qenty-logo.png";
 
 const Demo = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="min-h-screen bg-background">
       {/* Navigation */}
