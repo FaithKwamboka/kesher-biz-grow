@@ -30,6 +30,24 @@ const Index = () => {
               </Link>
               <DropdownMenu>
                 <DropdownMenuTrigger className="text-qenty-navy hover:text-qenty-blue transition-colors ml-auto flex items-center gap-1 focus:outline-none">
+                  Sign Up
+                  <ChevronDown className="h-4 w-4" />
+                </DropdownMenuTrigger>
+                <DropdownMenuContent className="bg-white border border-qenty-blue/20 shadow-lg z-50 min-w-[150px]">
+                  <DropdownMenuItem asChild className="hover:bg-qenty-blue/10">
+                    <a href="https://app.qenty.io/auth/register" className="cursor-pointer text-qenty-navy">
+                      Retailers
+                    </a>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem asChild className="hover:bg-qenty-blue/10">
+                    <a href="https://app.qenty.io/shf/register" className="cursor-pointer text-qenty-navy">
+                      Farmers
+                    </a>
+                  </DropdownMenuItem>
+                </DropdownMenuContent>
+              </DropdownMenu>
+              <DropdownMenu>
+                <DropdownMenuTrigger className="text-qenty-navy hover:text-qenty-blue transition-colors ml-auto flex items-center gap-1 focus:outline-none">
                   Login
                   <ChevronDown className="h-4 w-4" />
                 </DropdownMenuTrigger>
@@ -40,7 +58,7 @@ const Index = () => {
                     </a>
                   </DropdownMenuItem>
                   <DropdownMenuItem asChild className="hover:bg-qenty-blue/10">
-                    <a href="https://app.qenty.io/auth/login?next=/shf/" className="cursor-pointer text-qenty-navy">
+                    <a href="https://app.qenty.io/shf/login" className="cursor-pointer text-qenty-navy">
                       Farmers
                     </a>
                   </DropdownMenuItem>
