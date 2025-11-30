@@ -33,14 +33,14 @@ const Index = () => {
                   Login
                   <ChevronDown className="h-4 w-4" />
                 </DropdownMenuTrigger>
-                <DropdownMenuContent className="bg-background border-border z-50">
-                  <DropdownMenuItem asChild>
-                    <a href="https://app.qenty.io/auth/login" className="cursor-pointer">
+                <DropdownMenuContent className="bg-white border border-qenty-blue/20 shadow-lg z-50 min-w-[150px]">
+                  <DropdownMenuItem asChild className="hover:bg-qenty-blue/10">
+                    <a href="https://app.qenty.io/auth/login" className="cursor-pointer text-qenty-navy">
                       Retailers
                     </a>
                   </DropdownMenuItem>
-                  <DropdownMenuItem asChild>
-                    <a href="https://app.qenty.io/auth/login?next=/shf/" className="cursor-pointer">
+                  <DropdownMenuItem asChild className="hover:bg-qenty-blue/10">
+                    <a href="https://app.qenty.io/auth/login?next=/shf/" className="cursor-pointer text-qenty-navy">
                       Farmers
                     </a>
                   </DropdownMenuItem>
