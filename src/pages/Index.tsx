@@ -1,7 +1,13 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { CheckCircle, MessageSquare, TrendingUp, Shield, Users, Building, Phone, Mail, ArrowRight, FileText, Package, CreditCard, Globe, BarChart3, Store, Briefcase, Building2 } from "lucide-react";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import { CheckCircle, MessageSquare, TrendingUp, Shield, Users, Building, Phone, Mail, ArrowRight, FileText, Package, CreditCard, Globe, BarChart3, Store, Briefcase, Building2, ChevronDown } from "lucide-react";
 import { Link } from "react-router-dom";
 import qentyLogo from "@/assets/qenty-logo.png";
 
@@ -22,9 +28,24 @@ const Index = () => {
               <Link to="/about" className="text-qenty-navy hover:text-qenty-blue transition-colors">
                 About
               </Link>
-              <a href="https://app.qenty.io/auth/login" className="text-qenty-navy hover:text-qenty-blue transition-colors ml-auto">
-                Login
-              </a>
+              <DropdownMenu>
+                <DropdownMenuTrigger className="text-qenty-navy hover:text-qenty-blue transition-colors ml-auto flex items-center gap-1 focus:outline-none">
+                  Login
+                  <ChevronDown className="h-4 w-4" />
+                </DropdownMenuTrigger>
+                <DropdownMenuContent className="bg-background border-border z-50">
+                  <DropdownMenuItem asChild>
+                    <a href="https://app.qenty.io/auth/login" className="cursor-pointer">
+                      Retailers
+                    </a>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem asChild>
+                    <a href="https://app.qenty.io/auth/login?next=/shf/" className="cursor-pointer">
+                      Farmers
+                    </a>
+                  </DropdownMenuItem>
+                </DropdownMenuContent>
+              </DropdownMenu>
             </div>
           </div>
         </div>
